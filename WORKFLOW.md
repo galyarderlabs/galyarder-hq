@@ -23,7 +23,7 @@ Once the PRD and Linear tickets are approved:
 4. Every slice must cut through all layers (DB -> UI) and be independently verifiable.
 
 ## Phase 3: Execution & Testing (The "Factory")
-**Agents:** `elite-developer`, `ui-ux-designer`, `security-guardian`
+**Agents:** `elite-developer`, `ui-ux-designer`, `security-guardian`, `perseus`
 **Skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `vercel-react-best-practices`
 
 With the plan finalized:

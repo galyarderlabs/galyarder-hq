@@ -1,35 +1,33 @@
-# Release Notes - Galyarder Agent Framework v1.0.0
+# Release Notes - Galyarder Agent Framework v1.1.0
 
-Welcome to the inaugural release of the **Galyarder Agent Framework**. This release transforms your AI coding assistant into a complete, autonomous workforce designed for the solo founder.
+The **Sovereign Release** is here. Version 1.1.0 transforms the Galyarder Agent Framework from an engineering tool into a fully berdaulat (sovereign) business engine.
 
 ## Highlights
 
-### 1. High-Rigor Engineering Core
-We have restored the full depth of the original engineering agents. No truncated instructions. No shallow summaries. 
-- **TDD Enforcement**: Agents are mandated to write failing tests before implementation.
-- **Systematic Debugging**: A 4-phase root-cause analysis protocol that rejects symptom patching.
-- **Deep Architecture**: Systems design based on "Tracer Bullets" and "Deep Modules."
+### 1. The Sovereign Roster (Full C-Suite)
+We have added 10 new specialized agents to cover every blind spot of a solo founder:
+- **Risk Protection**: `legal-counsel` handles TOS, Privacy, and GDPR audits.
+- **Profit Protection**: `finops-manager` monitors burn rate and optimizes AI token costs.
+- **Intelligence**: `cyber-intel` scans the dark web and maps external threats.
+- **Offensive Security**: `perseus` performs advanced pentesting and bypass simulations.
+- **Data & Growth**: `analytics-architect` and `growth-engineer` ensure every feature is measurable and viral.
 
-### 2. The 1-Man Army C-Suite
-Beyond coding, Galyarder provides specialized agents for every stage of the product lifecycle:
-- **Strategy**: `product-manager` transforms raw ideas into Linear tickets with ROI prioritization.
-- **Production**: `devops-engineer` automates CI/CD and deployments via Docker and GitHub Actions.
-- **Revenue**: `revenue-architect` and `conversion-engineer` optimize pricing and onboarding funnels.
-- **Hype**: `social-strategist` and `remotion-engineer` generate viral content and programmatic videos.
+### 2. Nationalized "Elite" Skills
+To ensure you never rely on external environments, we have localized 20+ high-fidelity security and business skills directly into the repository. From **Red Teaming** to **ISO 42001 (AI Governance)**, the framework is now self-contained.
 
-### 3. Native Remotion Integration
-The framework includes a dedicated `/remotion` directory. The `remotion-engineer` agent can now build, preview, and render programmatic launch videos using React, ensuring your marketing is as automated as your code.
+### 3. New Command: `/cybersecurity`
+Direct access to the **Perseus** agent for intensive offensive security audits. Test for XSS, JWT flaws, and BOLA vulnerabilities with a single command.
 
-### 4. Token Economy (RTK)
-To maximize context efficiency, the framework enforces the use of the **RTK (Rust Token Killer)** proxy for all terminal operations, saving up to 90% of token usage on repetitive commands.
+### 4. Universal SaaS FinOps
+A new core skill specifically designed for the modern stack: **Vercel + Supabase + Neon + AI APIs**. Optimize your serverless database and edge function costs before the bill arrives.
 
-## Installation
-
-```bash
-# Claude Code / Copilot CLI
-/plugin marketplace add galyarderlabs/galyarder-agent-framework
-/plugin install galyarder@galyarder-agent-framework
-```
+## What's New in the Pipeline
+The `galyarder-specialist` (Master Orchestrator) now enforces a 5-phase sovereign lifecycle:
+1. **Market Intelligence**: PRD + KPIs + FinOps Feasibility.
+2. **Architecture**: Tracer Bullets + API Contracts + Legal Sign-off.
+3. **Engineering**: TDD + Offensive Audit + External Intel.
+4. **Production**: Zero-Downtime Deploy + Versioning + A/B Launch.
+5. **Distribution**: Viral Loops + Programmatic Video + FAQ Automation.
 
 ---
-© 2026 Galyarder Labs. Built for those who build alone.
+© 2026 Galyarder Labs. Sovereignty for those who build alone.

@@ -109,21 +109,32 @@ For peak "1-Man Army" efficiency, we recommend the following MCP servers:
 
 Galyarder Agent Framework distributes tasks to specialized C-Suite agents as well as deep engineering engines.
 
-**The C-Suite (Solo Founder Edition)**
+**The C-Suite (Sovereign 1-Man Army Edition)**
 - **`galyarder-specialist`** - Master workflow manager and orchestrator.
 - **`product-manager`** - Linear ticket management and ROI prioritization.
+- **`analytics-architect`** - Tracking schema and KPI enforcement.
+- **`finops-manager`** - Cloud cost optimization and pricing strategy.
+- **`legal-counsel`** - TOS/Privacy, GDPR audit, and AI governance.
 - **`super-architect`** - System design and Vertical Slice planning.
 - **`interface-designer`** - Module interface and API design specialist.
 - **`ui-ux-designer`** - UI generation via **Stitch** and design system enforcement.
+- **`experimentation-engineer`** - A/B testing and statistical evidence.
 - **`elite-developer`** - Implementation, TDD, and complex debugging.
 - **`vercel-react-expert`** - React/Next.js and Vercel performance optimization.
 - **`qa-automation-engineer`** - Live auditing and E2E testing via **BrowserOS**.
 - **`security-guardian`** - Zero-trust security audits, IDOR/SSRF remediation.
+- **`perseus`** - Advanced offensive security, red teaming, and pentesting.
+- **`cyber-intel`** - External threat intelligence and data leak monitoring.
 - **`devops-engineer`** - CI/CD, Docker, and zero-downtime deployment.
 - **`revenue-architect`** - Monetization and pricing strategy.
-- **`growth-strategist`** - Conversion optimization and SEO.
+- **`conversion-engineer`** - Onboarding CRO and paywall optimization.
+- **`growth-engineer`** - Engineering-as-marketing and referral loops.
+- **`growth-strategist`** - SEO dominance and high-signal copywriting.
+- **`retention-specialist`** - LTV, CRM, and psychological onboarding.
 - **`social-strategist`** - Social media and distribution hype.
 - **`remotion-engineer`** - Programmatic video generation using React.
+- **`release-manager`** - Versioning, changelogs, and launch orchestration.
+- **`support-lead`** - User education, FAQ automation, and troubleshooting.
 
 **Engineering Engines**
 - **architect**, **build-error-resolver**, **code-reviewer**, **doc-updater**, **e2e-runner**, **planner**, **refactor-cleaner**, **security-reviewer**, **tdd-guide**.
@@ -135,6 +146,7 @@ Galyarder Agent Framework provides short-hand commands for rapid execution:
 - **/plan** - Initialize implementation planning with vertical slices.
 - **/tdd** - Start a test-driven development session.
 - **/review** - Perform a principal-level code review.
+- **/cybersecurity** - Advanced offensive security audit and attack simulation.
 - **/build-fix** - Systematically fix build and type errors.
 - **/triage** - Diagnose bugs and create reproduction fix plans.
 - **/linear** - Sync PRDs and ideas to Linear tickets.
