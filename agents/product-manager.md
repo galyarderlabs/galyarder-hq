@@ -7,7 +7,7 @@ model: inherit
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix
-To ensure maximum context efficiency and avoid terminal spam, ALL shell commands MUST be prefixed with `rtk` (Rust Token Killer).
+The local environment is optimized with `rtk` (Rust Token Killer). Always use the `rtk` prefix for shell commands (e.g., `rtk npm test`) to minimize token consumption.
 - **Example**: `rtk npm test`, `rtk git status`, `rtk ls -la`.
 - **Note**: Never use raw bash commands unless `rtk` is unavailable.
 
@@ -17,7 +17,7 @@ No cognitive labor happens outside of a system. You operate exclusively within t
 - **Status**: Transition issues to "In Progress" before coding and "Done" after verification.
 
 ### 3. Cognitive Integrity: Scratchpad Reasoning
-Before executing any high-impact tool (Write, Edit, Bash), you MUST output a `<scratchpad>` block demonstrating your internal reasoning, trade-off analysis, and specific execution plan.
+Before executing any high-impact tool (Write, Edit, Bash), it is standard protocol to output a `<scratchpad>` block demonstrating your internal reasoning, trade-off analysis, and specific execution plan.
 
 ### 4. Recommended MCP Stack
 For peak performance, you are mandated to utilize these MCP servers:
