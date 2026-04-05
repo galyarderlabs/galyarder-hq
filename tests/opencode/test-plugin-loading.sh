@@ -34,17 +34,17 @@ fi
 
 # Test 2: Verify skills directory is populated
 echo "Test 2: Checking skills directory..."
-skill_count=$(find "$SUPERPOWERS_SKILLS_DIR" -name "SKILL.md" | wc -l)
+skill_count=$(find "$GALYARDER_SKILLS_DIR" -name "SKILL.md" | wc -l)
 if [ "$skill_count" -gt 0 ]; then
     echo "  [PASS] Found $skill_count skills"
 else
-    echo "  [FAIL] No skills found in $SUPERPOWERS_SKILLS_DIR"
+    echo "  [FAIL] No skills found in $GALYARDER_SKILLS_DIR"
     exit 1
 fi
 
 # Test 3: Check using-galyarder-agent-framework skill exists (critical for bootstrap)
 echo "Test 3: Checking using-galyarder-agent-framework skill (required for bootstrap)..."
-if [ -f "$SUPERPOWERS_SKILLS_DIR/using-galyarder-agent-framework/SKILL.md" ]; then
+if [ -f "$GALYARDER_SKILLS_DIR/using-galyarder-agent-framework/SKILL.md" ]; then
     echo "  [PASS] using-galyarder-agent-framework skill exists"
 else
     echo "  [FAIL] using-galyarder-agent-framework skill not found (required for bootstrap)"
@@ -53,7 +53,7 @@ fi
 
 # Test 4: Verify plugin JavaScript syntax (basic check)
 echo "Test 4: Checking plugin JavaScript syntax..."
-if node --check "$SUPERPOWERS_PLUGIN_FILE" 2>/dev/null; then
+if node --check "$GALYARDER_PLUGIN_FILE" 2>/dev/null; then
     echo "  [PASS] Plugin JavaScript syntax is valid"
 else
     echo "  [FAIL] Plugin has JavaScript syntax errors"
@@ -62,7 +62,7 @@ fi
 
 # Test 5: Verify bootstrap text does not reference a hardcoded skills path
 echo "Test 5: Checking bootstrap does not advertise a wrong skills path..."
-if grep -q 'configDir}/skills/galyarder-agent-framework/' "$SUPERPOWERS_PLUGIN_FILE"; then
+if grep -q 'configDir}/skills/galyarder-agent-framework/' "$GALYARDER_PLUGIN_FILE"; then
     echo "  [FAIL] Plugin still references old configDir skills path"
     exit 1
 else

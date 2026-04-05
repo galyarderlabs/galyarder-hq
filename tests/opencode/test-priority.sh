@@ -18,17 +18,17 @@ trap cleanup_test_env EXIT
 echo "Setting up priority test fixtures..."
 
 # 1. Create in galyarder-agent-framework location (lowest priority)
-mkdir -p "$SUPERPOWERS_SKILLS_DIR/priority-test"
-cat > "$SUPERPOWERS_SKILLS_DIR/priority-test/SKILL.md" <<'EOF'
+mkdir -p "$GALYARDER_SKILLS_DIR/priority-test"
+cat > "$GALYARDER_SKILLS_DIR/priority-test/SKILL.md" <<'EOF'
 ---
 name: priority-test
 description: Galyarder Agent Framework version of priority test skill
 ---
 # Priority Test Skill (Galyarder Agent Framework Version)
 
-This is the SUPERPOWERS version of the priority test skill.
+This is the GALYARDER version of the priority test skill.
 
-PRIORITY_MARKER_SUPERPOWERS_VERSION
+PRIORITY_MARKER_GALYARDER_VERSION
 EOF
 
 # 2. Create in personal location (medium priority)
@@ -65,7 +65,7 @@ echo "  Created priority-test skill in all three locations"
 echo ""
 echo "Test 1: Verifying test fixtures..."
 
-if [ -f "$SUPERPOWERS_SKILLS_DIR/priority-test/SKILL.md" ]; then
+if [ -f "$GALYARDER_SKILLS_DIR/priority-test/SKILL.md" ]; then
     echo "  [PASS] Galyarder Agent Framework version exists"
 else
     echo "  [FAIL] Galyarder Agent Framework version missing"
@@ -113,7 +113,7 @@ output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load t
 
 if echo "$output" | grep -qi "PRIORITY_MARKER_PERSONAL_VERSION"; then
     echo "  [PASS] Personal version loaded (overrides galyarder-agent-framework)"
-elif echo "$output" | grep -qi "PRIORITY_MARKER_SUPERPOWERS_VERSION"; then
+elif echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
     echo "  [FAIL] Galyarder Agent Framework version loaded instead of personal"
     exit 1
 else
@@ -142,7 +142,7 @@ if echo "$output" | grep -qi "PRIORITY_MARKER_PROJECT_VERSION"; then
 elif echo "$output" | grep -qi "PRIORITY_MARKER_PERSONAL_VERSION"; then
     echo "  [FAIL] Personal version loaded instead of project"
     exit 1
-elif echo "$output" | grep -qi "PRIORITY_MARKER_SUPERPOWERS_VERSION"; then
+elif echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
     echo "  [FAIL] Galyarder Agent Framework version loaded instead of project"
     exit 1
 else
@@ -164,7 +164,7 @@ output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load g
     fi
 }
 
-if echo "$output" | grep -qi "PRIORITY_MARKER_SUPERPOWERS_VERSION"; then
+if echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
     echo "  [PASS] galyarder-agent-framework: prefix correctly forces galyarder-agent-framework version"
 elif echo "$output" | grep -qi "PRIORITY_MARKER_PROJECT_VERSION\|PRIORITY_MARKER_PERSONAL_VERSION"; then
     echo "  [FAIL] galyarder-agent-framework: prefix did not force galyarder-agent-framework version"

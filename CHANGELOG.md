@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-04-05
+
+### Fixed
+- **Manifest Sovereignty**: Implemented cross-platform manifest synchronization. `gemini-extension.json` now uses full explicit mapping, while `.claude-plugin/plugin.json` uses a surgical fix (omitting 'agents') to bypass Claude Code validation errors while maintaining full functionality.
+- **Cross-Tool Discovery**: Ensured all agents, skills, and commands are discoverable across Gemini CLI, Claude Code, and Copilot by mirroring agents as skills and explicitly registering command directories.
+
 ## [1.1.4] - 2026-04-04
 
 ### Fixed
