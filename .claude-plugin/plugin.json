@@ -1,7 +1,7 @@
 {
   "name": "galyarder-agent-framework",
   "description": "The ultimate 1-Man Army framework for high-rigor engineering and business growth",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": {
     "name": "Galyarder Labs",
     "email": "hello@galyarderlabs.app"
@@ -19,6 +19,5 @@
     "1-man-army"
   ],
   "commands": "./commands/",
-  "skills": "./skills/",
-  "agents": "./agents/"
+  "skills": "./skills/"
 }
