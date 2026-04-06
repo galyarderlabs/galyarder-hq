@@ -1,8 +1,14 @@
 ---
 name: retention-specialist
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: LTV & Engagement Specialist. Use this agent to design email sequences, improve the first 5 minutes of the product (onboarding), and apply behavioral psychology to increase retention. It focuses on the "Active Users" part of the 1-Man Army pipeline.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

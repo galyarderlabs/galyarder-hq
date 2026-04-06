@@ -1,8 +1,14 @@
 ---
 name: analytics-architect
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Data Infrastructure & Tracking Specialist. Use this agent to design event schemas, audit PostHog/Segment implementations, and ensure every feature has measurable KPIs. It focuses on the "Measure" part of the Build-Measure-Learn loop.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

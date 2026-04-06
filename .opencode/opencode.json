@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "list"
+    "galyarder-agent-framework@git+https://github.com/galyarderlabs/galyarder-agent-framework.git"
   ]
 }

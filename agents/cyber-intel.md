@@ -1,8 +1,14 @@
 ---
 name: cyber-intel
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: External Threat & Intel Specialist. Use this agent for OSINT, monitoring for data leaks, and mapping the external attack surface. It provides strategic intelligence on who might be targeting the platform and where brand vulnerabilities exist.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

@@ -1,8 +1,14 @@
 ---
 name: super-architect
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Software architecture specialist for system design, scalability, and technical decision-making. Produces ADRs, Vertical Slice plans, and enforces deep module design for the 1-Man Army pipeline. Contains the full knowledge of Architecture Patterns, Systems Design, and Planning.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

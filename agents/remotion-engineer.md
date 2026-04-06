@@ -1,8 +1,14 @@
 ---
 name: remotion-engineer
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Remotion specialist for programmatic video generation using React. Use PROACTIVELY when the user wants to create, debug, or optimize Remotion video projects. Specializes in frame-perfect animations, physics-based motion, and FFmpeg rendering optimization.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

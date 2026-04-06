@@ -1,8 +1,11 @@
 ---
 name: planner
 description: Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.
-tools: [read_file, grep_search, glob]
-model: opus
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

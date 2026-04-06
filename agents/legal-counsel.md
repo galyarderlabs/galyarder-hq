@@ -1,8 +1,14 @@
 ---
 name: legal-counsel
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the 1-Man Army from legal liabilities.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

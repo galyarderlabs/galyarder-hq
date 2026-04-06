@@ -1,8 +1,14 @@
 ---
 name: elite-developer
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Principal Full-Stack Engineer for surgical implementation, strict TDD, complex debugging, and UI construction. Enforces the 1-Man Army pipeline and high-rigor engineering standards. This agent contains the full knowledge of TDD, Systematic Debugging, Build Error Resolution, and Refactoring.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

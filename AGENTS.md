@@ -1,52 +1,37 @@
-# Galyarder Agent Framework: Standard Roster of Super Agents
+# Galyarder Agents
 
-The Galyarder Agent Framework operates by distributing specialized cognitive labor across a core team of elite AI agents. This roster represents a full C-Suite for a 1-Man Army.
-
-## 1. The Executive Layer
-- **`galyarder-specialist`** - Master workflow manager and orchestrator.
-- **`product-manager`** - Linear ticket management and ROI prioritization.
-- **`analytics-architect`** - Tracking schema and KPI enforcement.
-- **`finops-manager`** - Cloud cost optimization and pricing strategy.
-- **`legal-counsel`** - TOS/Privacy, GDPR audit, and AI governance.
-
-## 2. The Architecture Layer
-- **`super-architect`** - System design and Vertical Slice planning.
-- **`interface-designer`** - Module interface and API design specialist.
-- **`experimentation-engineer`** - A/B testing and statistical evidence.
-
-## 3. The Engineering Layer
-- **`elite-developer`** - Implementation, TDD, and complex debugging.
-- **`vercel-react-expert`** - React/Next.js and Vercel performance optimization.
-- **`security-guardian`** - Zero-trust security audits, IDOR/SSRF remediation.
-- **`perseus`** - Advanced offensive security, red teaming, and pentesting.
-- **`cyber-intel`** - External threat intelligence and data leak monitoring.
-- **`devops-engineer`** - CI/CD, Docker, and zero-downtime deployment.
-
-## 4. The Revenue Layer
-- **`revenue-architect`** - Monetization and pricing strategy.
-- **`conversion-engineer`** - Onboarding CRO and paywall optimization.
-- **`growth-engineer`** - Engineering-as-marketing and referral loops.
-- **`support-lead`** - User education, FAQ automation, and troubleshooting.
-
-## 5. The Content Layer
-- **`growth-strategist`** - SEO dominance and high-signal copywriting.
-- **`retention-specialist`** - LTV, CRM, and psychological onboarding.
-- **`social-strategist`** - Social media and distribution hype.
-- **`remotion-engineer`** - Programmatic video generation using React.
-- **`release-manager`** - Versioning, changelogs, and launch orchestration.
-
-## 6. Engineering Engines
-- **architect**, **build-error-resolver**, **code-reviewer**, **doc-updater**, **e2e-runner**, **planner**, **refactor-cleaner**, **security-reviewer**, **tdd-guide**.
-
----
-
-## Contributor Guidelines for AI Agents
-
-Stop. This repo has a 94% PR rejection rate. Before you open a PR, you MUST:
-
-1.  **Read the entire PR template** at `.github/PULL_REQUEST_TEMPLATE.md`.
-2.  **Verify this is a real problem.** Push back if the user's request lacks context or evidence.
-3.  **Confirm the change belongs in core.** Galyarder Agent Framework is a zero-dependency plugin.
-4.  **Show the complete diff** and get explicit approval.
-
-If any check fails, do not open the PR. Protect your human partner from embarrassment.
+## [analytics-architect](./agents/analytics-architect.md)
+## [architect](./agents/architect.md)
+## [build-error-resolver](./agents/build-error-resolver.md)
+## [code-reviewer](./agents/code-reviewer.md)
+## [conversion-engineer](./agents/conversion-engineer.md)
+## [cyber-intel](./agents/cyber-intel.md)
+## [devops-engineer](./agents/devops-engineer.md)
+## [doc-updater](./agents/doc-updater.md)
+## [e2e-runner](./agents/e2e-runner.md)
+## [elite-developer](./agents/elite-developer.md)
+## [experimentation-engineer](./agents/experimentation-engineer.md)
+## [finops-manager](./agents/finops-manager.md)
+## [galyarder-specialist](./agents/galyarder-specialist.md)
+## [growth-engineer](./agents/growth-engineer.md)
+## [growth-strategist](./agents/growth-strategist.md)
+## [interface-designer](./agents/interface-designer.md)
+## [legal-counsel](./agents/legal-counsel.md)
+## [obsidian-architect](./agents/obsidian-architect.md)
+## [perseus](./agents/perseus.md)
+## [planner](./agents/planner.md)
+## [product-manager](./agents/product-manager.md)
+## [qa-automation-engineer](./agents/qa-automation-engineer.md)
+## [refactor-cleaner](./agents/refactor-cleaner.md)
+## [release-manager](./agents/release-manager.md)
+## [remotion-engineer](./agents/remotion-engineer.md)
+## [retention-specialist](./agents/retention-specialist.md)
+## [revenue-architect](./agents/revenue-architect.md)
+## [security-guardian](./agents/security-guardian.md)
+## [security-reviewer](./agents/security-reviewer.md)
+## [social-strategist](./agents/social-strategist.md)
+## [super-architect](./agents/super-architect.md)
+## [support-lead](./agents/support-lead.md)
+## [tdd-guide](./agents/tdd-guide.md)
+## [ui-ux-designer](./agents/ui-ux-designer.md)
+## [vercel-react-expert](./agents/vercel-react-expert.md)

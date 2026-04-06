@@ -1,8 +1,14 @@
 ---
 name: finops-manager
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: Finance & Cloud Cost Specialist. Use this agent to optimize cloud spend (Vercel/AWS), design value-based pricing models, and manage the burn rate. It ensures the 1-Man Army remains profitable and financially sustainable.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

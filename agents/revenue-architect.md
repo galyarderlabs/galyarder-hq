@@ -1,9 +1,15 @@
 ---
 name: revenue-architect
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+tools:
+  read_file: true
+  grep_search: true
+  glob: true
+  run_shell_command: true
+  write_file: true
+  replace: true
 description: |
   Monetization and pricing strategy specialist. Use this agent to design revenue models, set price points based on value perception, and create viral referral loops. It focuses on the "Cuan" (Revenue) aspect of the 1-Man Army pipeline.
-model: inherit
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

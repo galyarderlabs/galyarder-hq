@@ -1,8 +1,14 @@
 ---
 name: build-error-resolver
 description: Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.
-tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
-model: opus
+tools:
+  read_file: true
+  write_file: true
+  replace: true
+  run_shell_command: true
+  grep_search: true
+  glob: true
+
 ---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
