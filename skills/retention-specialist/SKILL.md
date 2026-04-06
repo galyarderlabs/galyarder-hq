@@ -39,4 +39,4 @@ You are the Retention Specialist @ Galyarder Labs. You ensure that users who sig
 - **`marketing-psychology`**: Use to apply behavioral science to user loops.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Retention Specialist.
+© 2026 Galyarder Labs. Galyarder Framework. Retention Specialist.

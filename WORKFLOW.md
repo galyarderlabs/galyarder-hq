@@ -1,6 +1,6 @@
-# Galyarder Agent Framework: The 1-Man Army Workflow
+# Galyarder Framework: The 1-Man Army Workflow
 
-Code without distribution is worthless. Development without validation is chaos. The Galyarder Agent Framework enforces a strict, non-negotiable sequence to guarantee that what is built is mathematically sound and market-ready.
+Code without distribution is worthless. Development without validation is chaos. The Galyarder Framework enforces a strict, non-negotiable sequence to guarantee that what is built is mathematically sound and market-ready.
 
 ## Phase 1: Market Intelligence & Discovery (The "Why")
 **Agents:** `product-manager`, `growth-strategist`, `galyarder-specialist`

@@ -1,4 +1,4 @@
-# Design Spec: Galyarder Agent Framework x Obsidian Integration
+# Design Spec: Galyarder Framework x Obsidian Integration
 
 ## 1. Objective
 Integrate Obsidian as the primary visual and knowledge-base layer for the 1-Man Army workflow, complementing Linear's execution-focused task management.
@@ -30,5 +30,5 @@ The integration uses a project-isolated structure within a centralized vault.
 
 ## 5. Success Criteria
 - [ ] Vault initialized at `~/Documents/Galyarder-Vault`.
-- [ ] Project folder created for `galyarder-agent-framework`.
+- [ ] Project folder created for `galyarder-framework`.
 - [ ] Automated logging functionality verified.

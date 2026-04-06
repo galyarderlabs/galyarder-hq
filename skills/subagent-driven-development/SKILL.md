@@ -61,7 +61,7 @@ digraph process {
     "Read plan, extract all tasks with full text, note context, create TodoWrite" [shape=box];
     "More tasks remain?" [shape=diamond];
     "Dispatch final code reviewer subagent for entire implementation" [shape=box];
-    "Use galyarder-agent-framework:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
+    "Use galyarder-framework:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
 
     "Read plan, extract all tasks with full text, note context, create TodoWrite" -> "Dispatch implementer subagent (./implementer-prompt.md)";
     "Dispatch implementer subagent (./implementer-prompt.md)" -> "Implementer subagent asks questions?";
@@ -80,7 +80,7 @@ digraph process {
     "Mark task complete in TodoWrite" -> "More tasks remain?";
     "More tasks remain?" -> "Dispatch implementer subagent (./implementer-prompt.md)" [label="yes"];
     "More tasks remain?" -> "Dispatch final code reviewer subagent for entire implementation" [label="no"];
-    "Dispatch final code reviewer subagent for entire implementation" -> "Use galyarder-agent-framework:finishing-a-development-branch";
+    "Dispatch final code reviewer subagent for entire implementation" -> "Use galyarder-framework:finishing-a-development-branch";
 }
 ```
 
@@ -132,7 +132,7 @@ This skill is written in cross-platform terms.
   subagent calls using either `agents/*.md` role files or the local prompt
   templates listed above.
 - On Codex specifically, follow
-  `using-galyarder-agent-framework/references/codex-tools.md`:
+  `using-galyarder-framework/references/codex-tools.md`:
   `Task` means `spawn_agent`, `TodoWrite` means `update_plan`, and named agent
   references are implemented by spawning a native Codex agent with the filled
   role prompt.
@@ -142,7 +142,7 @@ This skill is written in cross-platform terms.
 ```
 You: I'm using Subagent-Driven Development to execute this plan.
 
-[Read plan file once: docs/galyarder-agent-framework/plans/feature-plan.md]
+[Read plan file once: docs/galyarder-framework/plans/feature-plan.md]
 [Extract all 5 tasks with full text and context]
 [Create TodoWrite with all tasks]
 
@@ -153,7 +153,7 @@ Task 1: Hook installation script
 
 Implementer: "Before I begin - should the hook be installed at user or system level?"
 
-You: "User level (~/.config/galyarder-agent-framework/hooks/)"
+You: "User level (~/.config/galyarder-framework/hooks/)"
 
 Implementer: "Got it. Implementing now..."
 [Later] Implementer:
@@ -279,13 +279,13 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-agent-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-agent-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-agent-framework:requesting-code-review** - Code review template for reviewer subagents
-- **galyarder-agent-framework:finishing-a-development-branch** - Complete development after all tasks
+- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **galyarder-framework:writing-plans** - Creates the plan this skill executes
+- **galyarder-framework:requesting-code-review** - Code review template for reviewer subagents
+- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
 
 **Subagents should use:**
-- **galyarder-agent-framework:test-driven-development** - Subagents follow TDD for each task
+- **galyarder-framework:test-driven-development** - Subagents follow TDD for each task
 
 **Alternative workflow:**
-- **galyarder-agent-framework:executing-plans** - Use for parallel session instead of same-session execution
+- **galyarder-framework:executing-plans** - Use for parallel session instead of same-session execution

@@ -20,4 +20,4 @@ Use `/deploy` when:
 - Scaling infrastructure to handle more users.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:devops-deployment` skill.
+**Note**: This command is powered by the `galyarder-framework:devops-deployment` skill.

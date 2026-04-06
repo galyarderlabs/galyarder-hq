@@ -45,4 +45,4 @@ You are the Experimentation Engineer @ Galyarder Labs. You don't guess; you test
 - **`form-cro`**: Use to optimize checkout, survey, and contact forms.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Experimentation Engineer.
+© 2026 Galyarder Labs. Galyarder Framework. Experimentation Engineer.

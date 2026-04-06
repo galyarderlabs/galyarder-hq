@@ -28,4 +28,4 @@ Unlike traditional planning, `/plan` focuses on **Tracer Bullets**:
 - Each phase must be independently demoable and verifiable.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:writing-plans` and `prd-to-plan` skills.
+**Note**: This command is powered by the `galyarder-framework:writing-plans` and `prd-to-plan` skills.

@@ -14,14 +14,14 @@ export XDG_CONFIG_HOME="$TEST_HOME/.config"
 export OPENCODE_CONFIG_DIR="$TEST_HOME/.config/opencode"
 
 # Standard install layout:
-#   $OPENCODE_CONFIG_DIR/galyarder-agent-framework/             ← package root
-#   $OPENCODE_CONFIG_DIR/galyarder-agent-framework/skills/      ← skills dir (../../skills from plugin)
-#   $OPENCODE_CONFIG_DIR/galyarder-agent-framework/.opencode/plugins/galyarder-agent-framework.js ← plugin file
-#   $OPENCODE_CONFIG_DIR/plugins/galyarder-agent-framework.js   ← symlink OpenCode reads
+#   $OPENCODE_CONFIG_DIR/galyarder-framework/             ← package root
+#   $OPENCODE_CONFIG_DIR/galyarder-framework/skills/      ← skills dir (../../skills from plugin)
+#   $OPENCODE_CONFIG_DIR/galyarder-framework/.opencode/plugins/galyarder-framework.js ← plugin file
+#   $OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js   ← symlink OpenCode reads
 
-GALYARDER_DIR="$OPENCODE_CONFIG_DIR/galyarder-agent-framework"
+GALYARDER_DIR="$OPENCODE_CONFIG_DIR/galyarder-framework"
 GALYARDER_SKILLS_DIR="$GALYARDER_DIR/skills"
-GALYARDER_PLUGIN_FILE="$GALYARDER_DIR/.opencode/plugins/galyarder-agent-framework.js"
+GALYARDER_PLUGIN_FILE="$GALYARDER_DIR/.opencode/plugins/galyarder-framework.js"
 
 # Install skills
 mkdir -p "$GALYARDER_DIR"
@@ -29,11 +29,11 @@ cp -r "$REPO_ROOT/skills" "$GALYARDER_DIR/"
 
 # Install plugin
 mkdir -p "$(dirname "$GALYARDER_PLUGIN_FILE")"
-cp "$REPO_ROOT/.opencode/plugins/galyarder-agent-framework.js" "$GALYARDER_PLUGIN_FILE"
+cp "$REPO_ROOT/.opencode/plugins/galyarder-framework.js" "$GALYARDER_PLUGIN_FILE"
 
 # Register plugin via symlink (what OpenCode actually reads)
 mkdir -p "$OPENCODE_CONFIG_DIR/plugins"
-ln -sf "$GALYARDER_PLUGIN_FILE" "$OPENCODE_CONFIG_DIR/plugins/galyarder-agent-framework.js"
+ln -sf "$GALYARDER_PLUGIN_FILE" "$OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
 
 # Create test skills in different locations for testing
 
@@ -67,10 +67,10 @@ EOF
 
 echo "Setup complete: $TEST_HOME"
 echo "OPENCODE_CONFIG_DIR:  $OPENCODE_CONFIG_DIR"
-echo "Galyarder Agent Framework dir:      $GALYARDER_DIR"
+echo "Galyarder Framework dir:      $GALYARDER_DIR"
 echo "Skills dir:           $GALYARDER_SKILLS_DIR"
 echo "Plugin file:          $GALYARDER_PLUGIN_FILE"
-echo "Plugin registered at: $OPENCODE_CONFIG_DIR/plugins/galyarder-agent-framework.js"
+echo "Plugin registered at: $OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
 echo "Test project at:      $TEST_HOME/test-project"
 
 # Helper function for cleanup (call from tests or trap)

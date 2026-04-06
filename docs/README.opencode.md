@@ -1,34 +1,34 @@
-# Galyarder Agent Framework for OpenCode
+# Galyarder Framework for OpenCode
 
-Complete guide for using Galyarder Agent Framework with [OpenCode.ai](https://opencode.ai).
+Complete guide for using Galyarder Framework with [OpenCode.ai](https://opencode.ai).
 
 ## Installation
 
-Add galyarder-agent-framework to the `plugin` array in your `opencode.json` (global or project-level):
+Add galyarder-framework to the `plugin` array in your `opencode.json` (global or project-level):
 
 ```json
 {
-  "plugin": ["galyarder-agent-framework@git+https://github.com/galyarderlabs/galyarder-agent-framework.git"]
+  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git"]
 }
 ```
 
 Restart OpenCode. The plugin auto-installs via Bun and registers all skills automatically.
 
-Verify by asking: "Tell me about your galyarder-agent-framework"
+Verify by asking: "Tell me about your galyarder-framework"
 
 ### Migrating from the old symlink-based install
 
-If you previously installed galyarder-agent-framework using `git clone` and symlinks, remove the old setup:
+If you previously installed galyarder-framework using `git clone` and symlinks, remove the old setup:
 
 ```bash
 # Remove old symlinks
-rm -f ~/.config/opencode/plugins/galyarder-agent-framework.js
-rm -rf ~/.config/opencode/skills/galyarder-agent-framework
+rm -f ~/.config/opencode/plugins/galyarder-framework.js
+rm -rf ~/.config/opencode/skills/galyarder-framework
 
 # Optionally remove the cloned repo
-rm -rf ~/.config/opencode/galyarder-agent-framework
+rm -rf ~/.config/opencode/galyarder-framework
 
-# Remove skills.paths from opencode.json if you added one for galyarder-agent-framework
+# Remove skills.paths from opencode.json if you added one for galyarder-framework
 ```
 
 Then follow the installation steps above.
@@ -46,7 +46,7 @@ use skill tool to list skills
 ### Loading a Skill
 
 ```
-use skill tool to load galyarder-agent-framework/brainstorming
+use skill tool to load galyarder-framework/brainstorming
 ```
 
 ### Personal Skills
@@ -74,17 +74,17 @@ description: Use when [condition] - [what it does]
 
 Create project-specific skills in `.opencode/skills/` within your project.
 
-**Skill Priority:** Project skills > Personal skills > Galyarder Agent Framework skills
+**Skill Priority:** Project skills > Personal skills > Galyarder Framework skills
 
 ## Updating
 
-Galyarder Agent Framework updates automatically when you restart OpenCode. The plugin is re-installed from the git repository on each launch.
+Galyarder Framework updates automatically when you restart OpenCode. The plugin is re-installed from the git repository on each launch.
 
 To pin a specific version, use a branch or tag:
 
 ```json
 {
-  "plugin": ["galyarder-agent-framework@git+https://github.com/galyarderlabs/galyarder-agent-framework.git#v5.0.3"]
+  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git#v5.0.3"]
 }
 ```
 
@@ -92,8 +92,8 @@ To pin a specific version, use a branch or tag:
 
 The plugin does two things:
 
-1. **Injects bootstrap context** via the `experimental.chat.system.transform` hook, adding galyarder-agent-framework awareness to every conversation.
-2. **Registers the skills directory** via the `config` hook, so OpenCode discovers all galyarder-agent-framework skills without symlinks or manual config.
+1. **Injects bootstrap context** via the `experimental.chat.system.transform` hook, adding galyarder-framework awareness to every conversation.
+2. **Registers the skills directory** via the `config` hook, so OpenCode discovers all galyarder-framework skills without symlinks or manual config.
 
 ### Tool Mapping
 
@@ -108,7 +108,7 @@ Skills written for Claude Code are automatically adapted for OpenCode:
 
 ### Plugin not loading
 
-1. Check OpenCode logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-agent-framework`
+1. Check OpenCode logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-framework`
 2. Verify the plugin line in your `opencode.json` is correct
 3. Make sure you're running a recent version of OpenCode
 
@@ -125,6 +125,6 @@ Skills written for Claude Code are automatically adapted for OpenCode:
 
 ## Getting Help
 
-- Report issues: https://github.com/galyarderlabs/galyarder-agent-framework/issues
-- Main documentation: https://github.com/galyarderlabs/galyarder-agent-framework
+- Report issues: https://github.com/galyarderlabs/galyarder-framework/issues
+- Main documentation: https://github.com/galyarderlabs/galyarder-framework
 - OpenCode docs: https://opencode.ai/docs/

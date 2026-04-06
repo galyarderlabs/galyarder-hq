@@ -1,4 +1,4 @@
-# Installing Galyarder Agent Framework for OpenCode
+# Installing Galyarder Framework for OpenCode
 
 ## Prerequisites
 
@@ -6,31 +6,31 @@
 
 ## Installation
 
-Add galyarder-agent-framework to the `plugin` array in your `opencode.json` (global or project-level):
+Add galyarder-framework to the `plugin` array in your `opencode.json` (global or project-level):
 
 ```json
 {
-  "plugin": ["galyarder-agent-framework@git+https://github.com/galyarderlabs/galyarder-agent-framework.git"]
+  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git"]
 }
 ```
 
 Restart OpenCode. That's it — the plugin auto-installs and registers all skills.
 
-Verify by asking: "Tell me about your galyarder-agent-framework"
+Verify by asking: "Tell me about your galyarder-framework"
 
 ## Migrating from the old symlink-based install
 
-If you previously installed galyarder-agent-framework using `git clone` and symlinks, remove the old setup:
+If you previously installed galyarder-framework using `git clone` and symlinks, remove the old setup:
 
 ```bash
 # Remove old symlinks
-rm -f ~/.config/opencode/plugins/galyarder-agent-framework.js
-rm -rf ~/.config/opencode/skills/galyarder-agent-framework
+rm -f ~/.config/opencode/plugins/galyarder-framework.js
+rm -rf ~/.config/opencode/skills/galyarder-framework
 
 # Optionally remove the cloned repo
-rm -rf ~/.config/opencode/galyarder-agent-framework
+rm -rf ~/.config/opencode/galyarder-framework
 
-# Remove skills.paths from opencode.json if you added one for galyarder-agent-framework
+# Remove skills.paths from opencode.json if you added one for galyarder-framework
 ```
 
 Then follow the installation steps above.
@@ -41,18 +41,18 @@ Use OpenCode's native `skill` tool:
 
 ```
 use skill tool to list skills
-use skill tool to load galyarder-agent-framework/brainstorming
+use skill tool to load galyarder-framework/brainstorming
 ```
 
 ## Updating
 
-Galyarder Agent Framework updates automatically when you restart OpenCode.
+Galyarder Framework updates automatically when you restart OpenCode.
 
 To pin a specific version:
 
 ```json
 {
-  "plugin": ["galyarder-agent-framework@git+https://github.com/galyarderlabs/galyarder-agent-framework.git#v5.0.3"]
+  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git#v5.0.3"]
 }
 ```
 
@@ -60,7 +60,7 @@ To pin a specific version:
 
 ### Plugin not loading
 
-1. Check logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-agent-framework`
+1. Check logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-framework`
 2. Verify the plugin line in your `opencode.json`
 3. Make sure you're running a recent version of OpenCode
 
@@ -79,5 +79,5 @@ When skills reference Claude Code tools:
 
 ## Getting Help
 
-- Report issues: https://github.com/galyarderlabs/galyarder-agent-framework/issues
-- Full documentation: https://github.com/galyarderlabs/galyarder-agent-framework/blob/main/docs/README.opencode.md
+- Report issues: https://github.com/galyarderlabs/galyarder-framework/issues
+- Full documentation: https://github.com/galyarderlabs/galyarder-framework/blob/main/docs/README.opencode.md

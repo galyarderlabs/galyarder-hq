@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Test: Plugin Loading
-# Verifies that the galyarder-agent-framework plugin loads correctly in OpenCode
+# Verifies that the galyarder-framework plugin loads correctly in OpenCode
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -13,7 +13,7 @@ source "$SCRIPT_DIR/setup.sh"
 # Trap to cleanup on exit
 trap cleanup_test_env EXIT
 
-plugin_link="$OPENCODE_CONFIG_DIR/plugins/galyarder-agent-framework.js"
+plugin_link="$OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
 
 # Test 1: Verify plugin file exists and is registered
 echo "Test 1: Checking plugin registration..."
@@ -42,12 +42,12 @@ else
     exit 1
 fi
 
-# Test 3: Check using-galyarder-agent-framework skill exists (critical for bootstrap)
-echo "Test 3: Checking using-galyarder-agent-framework skill (required for bootstrap)..."
-if [ -f "$GALYARDER_SKILLS_DIR/using-galyarder-agent-framework/SKILL.md" ]; then
-    echo "  [PASS] using-galyarder-agent-framework skill exists"
+# Test 3: Check using-galyarder-framework skill exists (critical for bootstrap)
+echo "Test 3: Checking using-galyarder-framework skill (required for bootstrap)..."
+if [ -f "$GALYARDER_SKILLS_DIR/using-galyarder-framework/SKILL.md" ]; then
+    echo "  [PASS] using-galyarder-framework skill exists"
 else
-    echo "  [FAIL] using-galyarder-agent-framework skill not found (required for bootstrap)"
+    echo "  [FAIL] using-galyarder-framework skill not found (required for bootstrap)"
     exit 1
 fi
 
@@ -62,7 +62,7 @@ fi
 
 # Test 5: Verify bootstrap text does not reference a hardcoded skills path
 echo "Test 5: Checking bootstrap does not advertise a wrong skills path..."
-if grep -q 'configDir}/skills/galyarder-agent-framework/' "$GALYARDER_PLUGIN_FILE"; then
+if grep -q 'configDir}/skills/galyarder-framework/' "$GALYARDER_PLUGIN_FILE"; then
     echo "  [FAIL] Plugin still references old configDir skills path"
     exit 1
 else

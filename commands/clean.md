@@ -13,4 +13,4 @@ This command invokes the **refactor-cleaner** agent to reduce technical debt.
 3. **Refactoring** - Simplifies complex functions and deepens shallow modules.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:improve-codebase-architecture` skill.
+**Note**: This command is powered by the `galyarder-framework:improve-codebase-architecture` skill.

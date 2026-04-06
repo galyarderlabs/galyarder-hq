@@ -91,4 +91,4 @@ You have access to a vast array of specialized testing skills within this framew
   ```
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Perseus Offensive Security.
+© 2026 Galyarder Labs. Galyarder Framework. Perseus Offensive Security.

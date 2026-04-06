@@ -1,5 +1,5 @@
 ---
-name: using-galyarder-agent-framework
+name: using-galyarder-framework
 description: Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions
 ---
 
@@ -17,10 +17,10 @@ This is not negotiable. This is not optional. You cannot rationalize your way ou
 
 ## Instruction Priority
 
-Galyarder Agent Framework skills override default system prompt behavior, but **user instructions always take precedence**:
+Galyarder Framework skills override default system prompt behavior, but **user instructions always take precedence**:
 
 1. **User's explicit instructions** (CLAUDE.md, GEMINI.md, AGENTS.md, direct requests) — highest priority
-2. **Galyarder Agent Framework skills** — override default system behavior where they conflict
+2. **Galyarder Framework skills** — override default system behavior where they conflict
 3. **Default system prompt** — lowest priority
 
 If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow the user's instructions. The user is in control.

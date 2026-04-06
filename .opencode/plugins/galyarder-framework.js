@@ -1,5 +1,5 @@
 /**
- * Galyarder Agent Framework plugin for OpenCode.ai
+ * Galyarder Framework plugin for OpenCode.ai
  */
 
 import path from 'path';
@@ -34,7 +34,7 @@ export const GalyarderAgentFrameworkPlugin = async ({ client, directory }) => {
   const frameworkSkillsDir = path.resolve(__dirname, '../../skills');
 
   const getBootstrapContent = () => {
-    const skillPath = path.join(frameworkSkillsDir, 'using-galyarder-agent-framework', 'SKILL.md');
+    const skillPath = path.join(frameworkSkillsDir, 'using-galyarder-framework', 'SKILL.md');
     if (!fs.existsSync(skillPath)) return null;
 
     const fullContent = fs.readFileSync(skillPath, 'utf8');
@@ -48,7 +48,7 @@ When skills reference tools you don't have, substitute OpenCode equivalents:
 - \`Read\`, \`Write\`, \`Edit\`, \`Bash\` → Your native tools`;
 
     return `<EXTREMELY_IMPORTANT>
-You have galyarder-agent-framework.
+You have galyarder-framework.
 
 ${content}
 

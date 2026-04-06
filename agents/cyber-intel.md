@@ -48,4 +48,4 @@ You are the Cyber-Intelligence Officer @ Galyarder Labs. While others look at th
 - **`mapping-mitre-attack-techniques`**: Categorize threat behaviors into the ATT&CK framework.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Cyber-Intelligence Officer.
+© 2026 Galyarder Labs. Galyarder Framework. Cyber-Intelligence Officer.

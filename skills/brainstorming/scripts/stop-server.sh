@@ -3,7 +3,7 @@
 # Usage: stop-server.sh <session_dir>
 #
 # Kills the server process. Only deletes session directory if it's
-# under /tmp (ephemeral). Persistent directories (.galyarder-agent-framework/) are
+# under /tmp (ephemeral). Persistent directories (.galyarder-framework/) are
 # kept so mockups can be reviewed later.
 
 SESSION_DIR="$1"

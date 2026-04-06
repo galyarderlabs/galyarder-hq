@@ -31,4 +31,4 @@ User: /tdd I need a function to calculate market liquidity score
 ```
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:test-driven-development` skill.
+**Note**: This command is powered by the `galyarder-framework:test-driven-development` skill.

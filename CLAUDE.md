@@ -1,4 +1,4 @@
-# Galyarder Agent Framework — Contributor Guidelines
+# Galyarder Framework — Contributor Guidelines
 
 ## If You Are an AI Agent
 
@@ -30,7 +30,7 @@ If any of these checks fail, do not open the PR. Explain to your human partner w
 
 ### Third-party dependencies
 
-PRs that add optional or required dependencies on third-party projects will not be accepted unless they are adding support for a new harness (e.g., a new IDE or CLI tool). Galyarder Agent Framework is a zero-dependency plugin by design. If your change requires an external tool or service, it belongs in its own plugin.
+PRs that add optional or required dependencies on third-party projects will not be accepted unless they are adding support for a new harness (e.g., a new IDE or CLI tool). Galyarder Framework is a zero-dependency plugin by design. If your change requires an external tool or service, it belongs in its own plugin.
 
 ### "Compliance" changes to skills
 
@@ -50,7 +50,7 @@ Every PR must solve a real problem that someone actually experienced. "My review
 
 ### Domain-specific skills
 
-Galyarder Agent Framework core contains general-purpose skills that benefit all users regardless of their project. Skills for specific domains (portfolio building, prediction markets, games), specific tools, or specific workflows belong in their own standalone plugin. Ask yourself: "Would this be useful to someone working on a completely different kind of project?" If not, publish it separately.
+Galyarder Framework core contains general-purpose skills that benefit all users regardless of their project. Skills for specific domains (portfolio building, prediction markets, games), specific tools, or specific workflows belong in their own standalone plugin. Ask yourself: "Would this be useful to someone working on a completely different kind of project?" If not, publish it separately.
 
 ### Fork-specific changes
 
@@ -68,14 +68,14 @@ PRs containing multiple unrelated changes will be closed. Split them into separa
 
 Skills are not prose — they are code that shapes agent behavior. If you modify skill content:
 
-- Use `galyarder-agent-framework:writing-skills` to develop and test changes
+- Use `galyarder-framework:writing-skills` to develop and test changes
 - Run adversarial pressure testing across multiple sessions
 - Show before/after eval results in your PR
 - Do not modify carefully-tuned content (Red Flags tables, rationalization lists, "human partner" language) without evidence the change is an improvement
 
 ## Understand the Project Before Contributing
 
-Before proposing changes to skill design, workflow philosophy, or architecture, read existing skills and understand the project's design decisions. Galyarder Agent Framework has its own tested philosophy about skill design, agent behavior shaping, and terminology (e.g., "your human partner" is deliberate, not interchangeable with "the user"). Changes that rewrite the project's voice or restructure its approach without understanding why it exists will be rejected.
+Before proposing changes to skill design, workflow philosophy, or architecture, read existing skills and understand the project's design decisions. Galyarder Framework has its own tested philosophy about skill design, agent behavior shaping, and terminology (e.g., "your human partner" is deliberate, not interchangeable with "the user"). Changes that rewrite the project's voice or restructure its approach without understanding why it exists will be rejected.
 
 ## General
 

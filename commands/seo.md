@@ -13,4 +13,4 @@ This command invokes the **growth-strategist** agent to dominate search results.
 3. **AEO Optimization** - Structures content for AI scrapers (ChatGPT, Perplexity).
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:seo-audit` and `schema-markup` skills.
+**Note**: This command is powered by the `galyarder-framework:seo-audit` and `schema-markup` skills.

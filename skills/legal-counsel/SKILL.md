@@ -45,4 +45,4 @@ You are the General Counsel @ Galyarder Labs. Your mission is to mitigate risk a
 - **`contract-review`**: Automated analysis of service agreements.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Legal Counsel.
+© 2026 Galyarder Labs. Galyarder Framework. Legal Counsel.

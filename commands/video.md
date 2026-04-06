@@ -20,4 +20,4 @@ Use `/video` when:
 - Building a data-driven video dashboard.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:video-generation` and `remotion-best-practices` skills.
+**Note**: This command is powered by the `galyarder-framework:video-generation` and `remotion-best-practices` skills.

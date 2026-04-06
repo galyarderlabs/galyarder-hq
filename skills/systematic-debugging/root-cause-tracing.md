@@ -33,7 +33,7 @@ digraph when_to_use {
 
 ### 1. Observe the Symptom
 ```
-Error: git init failed in /home/galyarder-agent-framework/project/packages/core
+Error: git init failed in /home/galyarder-framework/project/packages/core
 ```
 
 ### 2. Find Immediate Cause

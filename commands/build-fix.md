@@ -20,4 +20,4 @@ Use `/build-fix` when:
 - Tests are failing due to environment or type mismatches.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:systematic-debugging` skill.
+**Note**: This command is powered by the `galyarder-framework:systematic-debugging` skill.

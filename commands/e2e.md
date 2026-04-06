@@ -13,4 +13,4 @@ This command invokes the **e2e-runner** agent to verify complete user flows.
 3. **Flakiness Management** - Identifies and fixes unstable tests using condition-based waiting.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:verification-before-completion` and `systematic-debugging` skills.
+**Note**: This command is powered by the `galyarder-framework:verification-before-completion` and `systematic-debugging` skills.

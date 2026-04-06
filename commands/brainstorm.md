@@ -13,4 +13,4 @@ This command invokes the **brainstorming** skill to refine your ideas.
 3. **Requirement Locking** - Produces a structured design document.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:brainstorming` skill.
+**Note**: This command is powered by the `galyarder-framework:brainstorming` skill.

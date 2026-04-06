@@ -13,4 +13,4 @@ This command invokes the **conversion-engineer** agent to maximize user activati
 3. **Paywall Strategy** - Optimizes upgrade triggers using psychological leverage (Loss Aversion).
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:onboarding-cro` and `paywall-upgrade-cro` skills.
+**Note**: This command is powered by the `galyarder-framework:onboarding-cro` and `paywall-upgrade-cro` skills.

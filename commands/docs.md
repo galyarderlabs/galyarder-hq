@@ -13,4 +13,4 @@ This command invokes the **doc-updater** agent to keep your documentation in syn
 3. **Guide Maintenance** - Ensures setup and contribution guides are up to date.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:doc-updater` skill.
+**Note**: This command is powered by the `galyarder-framework:doc-updater` skill.

@@ -45,4 +45,4 @@ You are the Release Manager @ Galyarder Labs. You don't just "deploy"; you "laun
 - **`writing-skills`**: Use to draft professional release notes.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Release Manager.
+© 2026 Galyarder Labs. Galyarder Framework. Release Manager.

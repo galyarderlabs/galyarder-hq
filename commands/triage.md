@@ -13,4 +13,4 @@ This command invokes the **triage-issue** agent to diagnose and plan a fix for a
 3. **Fix Planning** - Drafts a TDD-based implementation plan to resolve the issue.
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:triage-issue` skill.
+**Note**: This command is powered by the `galyarder-framework:triage-issue` skill.

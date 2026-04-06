@@ -1,10 +1,12 @@
 <p align="center">
-  <img src="public/logo.png" width="200" alt="Galyarder Agent Framework Logo">
+  <img src="public/logo.png" width="200" alt="Galyarder Framework Logo">
 </p>
 
-# Galyarder Agent Framework
+# Galyarder Framework
 
-Galyarder Agent Framework is a high-fidelity cognitive layer designed to transform standard AI coding assistants into a multi-disciplinary, autonomous workforce. It unifies elite software engineering, behavioral marketing psychology, and strategic product orchestration into a single, cohesive system.
+The ultimate 1-Man Army framework powered by 100+ elite agent skills.
+
+Galyarder Framework is a high-fidelity cognitive layer designed to transform standard AI coding assistants into a multi-disciplinary, autonomous workforce. It unifies elite software engineering, behavioral marketing psychology, and strategic product orchestration into a single, cohesive system.
 
 Built for the **1-Man Army** (Solo Founder), Galyarder enforces a strict lifecycle that ensures what you build is mathematically sound, production-ready, and optimized for market success.
 
@@ -18,13 +20,13 @@ After you've signed off on the design, your agent puts together an implementatio
 
 Next up, once you say "go", it launches a *subagent-driven-development* process, routing each engineering task through the host's available delegation model while preserving the same review and orchestration workflow. On some hosts this appears as named agent dispatch; on others it is implemented through native subagents using Galyarder role prompts. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
 
-Finally, Galyarder Agent Framework shifts into **Marketing Mode**, triggering skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
+Finally, Galyarder Framework shifts into **Marketing Mode**, triggering skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
 
 There's a bunch more to it, but that's the core of the system. The workflow philosophy stays consistent across hosts, while runtime mechanics such as installation, command invocation, and subagent dispatch vary by platform. Once installed correctly for your host, your coding agent can follow the same Galyarder workflow.
 
 ## Sponsorship
 
-If Galyarder Agent Framework has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/galyarderlabs).
+If Galyarder Framework has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/galyarderlabs).
 
 Thanks! 
 
@@ -39,13 +41,13 @@ Galyarder is a multi-platform agent framework with host-specific installation an
 Register the Galyarder marketplace first:
 
 ```bash
-/plugin marketplace add galyarderlabs/galyarder-agent-framework
+/plugin marketplace add galyarderlabs/galyarder-framework
 ```
 
 Then install the plugin:
 
 ```bash
-/plugin install galyarder-agent-framework@galyarderlabs-marketplace
+/plugin install galyarder-framework@galyarderlabs-marketplace
 ```
 
 ### Cursor (via Plugin Marketplace)
@@ -53,7 +55,7 @@ Then install the plugin:
 In Cursor Agent chat, install from marketplace:
 
 ```text
-/add-plugin galyarder-agent-framework
+/add-plugin galyarder-framework
 ```
 
 ### Gemini CLI
@@ -61,13 +63,13 @@ In Cursor Agent chat, install from marketplace:
 Install the extension directly from the repository:
 
 ```bash
-gemini extensions install https://github.com/galyarderlabs/galyarder-agent-framework
+gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 ```
 
 To update:
 
 ```bash
-gemini extensions update galyarder-agent-framework
+gemini extensions update galyarder-framework
 ```
 
 ### Codex
@@ -75,7 +77,7 @@ gemini extensions update galyarder-agent-framework
 Tell Codex:
 
 ```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-agent-framework/refs/heads/main/.codex/INSTALL.md
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.codex/INSTALL.md
 ```
 
 **Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
@@ -85,7 +87,7 @@ Fetch and follow instructions from https://raw.githubusercontent.com/galyarderla
 Tell OpenCode:
 
 ```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-agent-framework/refs/heads/main/.opencode/INSTALL.md
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.opencode/INSTALL.md
 ```
 
 **Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
@@ -107,7 +109,7 @@ For peak "1-Man Army" efficiency, we recommend the following MCP servers:
 
 ### Agents
 
-Galyarder Agent Framework distributes tasks to specialized C-Suite agents as well as deep engineering engines.
+Galyarder Framework distributes tasks to specialized C-Suite agents as well as deep engineering engines.
 
 **The C-Suite (1-Man Army Edition)**
 - **`galyarder-specialist`** - Master workflow manager and orchestrator.
@@ -142,7 +144,7 @@ Galyarder Agent Framework distributes tasks to specialized C-Suite agents as wel
 
 ### Commands
 
-Galyarder Agent Framework provides short-hand commands for rapid execution:
+Galyarder Framework provides short-hand commands for rapid execution:
 - **/brainstorm** - Socratic design refinement and intent exploration.
 - **/plan** - Initialize implementation planning with vertical slices.
 - **/tdd** - Start a test-driven development session.
@@ -178,7 +180,7 @@ invocation model.
 - **Product Management**: `linear-ticket-management`, `prd-to-plan`, `prd-to-issues`, `write-a-prd`, `ubiquitous-language`.
 - **Collaboration & Documentation**: `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `obsidian-cli`, `json-canvas`, `obsidian-bases`, `obsidian-markdown`, `defuddle`.
 - **Video & Content**: `remotion-best-practices`, `video-generation`, `email-sequence`.
-- **Meta**: `writing-skills`, `using-galyarder-agent-framework`.
+- **Meta**: `writing-skills`, `using-galyarder-framework`.
 
 ## Philosophy
 
@@ -204,12 +206,12 @@ Skills update automatically when you update the plugin:
 
 **Claude Code / Copilot CLI:**
 ```bash
-/plugin update galyarder-agent-framework@galyarderlabs-marketplace
+/plugin update galyarder-framework@galyarderlabs-marketplace
 ```
 
 **Gemini CLI:**
 ```bash
-gemini extensions update galyarder-agent-framework
+gemini extensions update galyarder-framework
 ```
 
 ## License
@@ -218,5 +220,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Issues**: https://github.com/galyarderlabs/galyarder-agent-framework/issues
-- **Marketplace**: https://github.com/galyarderlabs/galyarder-agent-framework
+- **Issues**: https://github.com/galyarderlabs/galyarder-framework/issues
+- **Marketplace**: https://github.com/galyarderlabs/galyarder-framework

@@ -1,7 +1,7 @@
 [projects."/home/galyarder"]
 trust_level = "trusted"
 
-[projects."/home/galyarder/projects/galyarder-agent-framework"]
+[projects."/home/galyarder/projects/galyarder-framework"]
 trust_level = "trusted"
 
 [commands]

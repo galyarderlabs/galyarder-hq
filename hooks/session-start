@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SessionStart hook for galyarder-agent-framework plugin
+# SessionStart hook for galyarder-framework plugin
 
 set -euo pipefail
 
@@ -9,13 +9,13 @@ PLUGIN_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 # Check if legacy skills directory exists and build warning
 warning_message=""
-legacy_skills_dir="${HOME}/.config/galyarder-agent-framework/skills"
+legacy_skills_dir="${HOME}/.config/galyarder-framework/skills"
 if [ -d "$legacy_skills_dir" ]; then
-    warning_message="\n\n<important-reminder>IN YOUR FIRST REPLY AFTER SEEING THIS MESSAGE YOU MUST TELL THE USER:⚠️ **WARNING:** Galyarder Agent Framework now uses Claude Code's skills system. Custom skills in ~/.config/galyarder-agent-framework/skills will not be read. Move custom skills to ~/.claude/skills instead. To make this message go away, remove ~/.config/galyarder-agent-framework/skills</important-reminder>"
+    warning_message="\n\n<important-reminder>IN YOUR FIRST REPLY AFTER SEEING THIS MESSAGE YOU MUST TELL THE USER:⚠️ **WARNING:** Galyarder Framework now uses Claude Code's skills system. Custom skills in ~/.config/galyarder-framework/skills will not be read. Move custom skills to ~/.claude/skills instead. To make this message go away, remove ~/.config/galyarder-framework/skills</important-reminder>"
 fi
 
-# Read using-galyarder-agent-framework content
-bootstrap_skill_path="${PLUGIN_ROOT}/skills/using-galyarder-agent-framework/SKILL.md"
+# Read using-galyarder-framework content
+bootstrap_skill_path="${PLUGIN_ROOT}/skills/using-galyarder-framework/SKILL.md"
 bootstrap_content=$(cat "$bootstrap_skill_path" 2>&1 || echo "Error reading bootstrap skill")
 
 # Escape string for JSON embedding
@@ -31,7 +31,7 @@ escape_for_json() {
 
 bootstrap_escaped=$(escape_for_json "$bootstrap_content")
 warning_escaped=$(escape_for_json "$warning_message")
-session_context="<EXTREMELY_IMPORTANT>\nYou have galyarder-agent-framework.\n\n**Below is the full content of your 'galyarder-agent-framework:using-galyarder-agent-framework' skill - your introduction to using skills. For all other skills, use the 'Skill' tool:**\n\n${bootstrap_escaped}\n\n${warning_escaped}\n</EXTREMELY_IMPORTANT>"
+session_context="<EXTREMELY_IMPORTANT>\nYou have galyarder-framework.\n\n**Below is the full content of your 'galyarder-framework:using-galyarder-framework' skill - your introduction to using skills. For all other skills, use the 'Skill' tool:**\n\n${bootstrap_escaped}\n\n${warning_escaped}\n</EXTREMELY_IMPORTANT>"
 
 # Output context injection as JSON.
 if [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then

@@ -19,11 +19,11 @@ fi
 
 # Get the directory where this script lives (should be tests/skill-triggering)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# Get the galyarder-agent-framework plugin root (two levels up from tests/skill-triggering)
+# Get the galyarder-framework plugin root (two levels up from tests/skill-triggering)
 PLUGIN_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 TIMESTAMP=$(date +%s)
-OUTPUT_DIR="/tmp/galyarder-agent-framework-tests/${TIMESTAMP}/skill-triggering/${SKILL_NAME}"
+OUTPUT_DIR="/tmp/galyarder-framework-tests/${TIMESTAMP}/skill-triggering/${SKILL_NAME}"
 mkdir -p "$OUTPUT_DIR"
 
 # Read prompt from file

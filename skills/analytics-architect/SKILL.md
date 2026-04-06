@@ -41,4 +41,4 @@ You are the Analytics Architect @ Galyarder Labs. You don't guess; you measure. 
 - **`analytics-tracking`**: Use this skill to design and audit tracking systems.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Analytics Architect.
+© 2026 Galyarder Labs. Galyarder Framework. Analytics Architect.

@@ -1,13 +1,13 @@
-# Galyarder Agent Framework for Codex
+# Galyarder Framework for Codex
 
-Guide for using Galyarder Agent Framework with OpenAI Codex via native skill discovery.
+Guide for using Galyarder Framework with OpenAI Codex via native skill discovery.
 
 ## Quick Install
 
 Tell Codex:
 
 ```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-agent-framework/refs/heads/main/.codex/INSTALL.md
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.codex/INSTALL.md
 ```
 
 ## Manual Installation
@@ -21,13 +21,13 @@ Fetch and follow instructions from https://raw.githubusercontent.com/galyarderla
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/galyarderlabs/galyarder-agent-framework.git ~/.codex/galyarder-agent-framework
+   git clone https://github.com/galyarderlabs/galyarder-framework.git ~/.codex/galyarder-framework
    ```
 
 2. Create the skills symlink:
    ```bash
    mkdir -p ~/.agents/skills
-   ln -s ~/.codex/galyarder-agent-framework/skills ~/.agents/skills/galyarder-agent-framework
+   ln -s ~/.codex/galyarder-framework/skills ~/.agents/skills/galyarder-framework
    ```
 
 3. Restart Codex.
@@ -44,25 +44,25 @@ Use a junction instead of a symlink (works without Developer Mode):
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
-cmd /c mklink /J "$env:USERPROFILE\.agents\skills\galyarder-agent-framework" "$env:USERPROFILE\.codex\galyarder-agent-framework\skills"
+cmd /c mklink /J "$env:USERPROFILE\.agents\skills\galyarder-framework" "$env:USERPROFILE\.codex\galyarder-framework\skills"
 ```
 
 ## How It Works
 
-Codex has native skill discovery — it scans `~/.agents/skills/` at startup, parses SKILL.md frontmatter, and loads skills on demand. Galyarder Agent Framework skills are made visible through a single symlink:
+Codex has native skill discovery — it scans `~/.agents/skills/` at startup, parses SKILL.md frontmatter, and loads skills on demand. Galyarder Framework skills are made visible through a single symlink:
 
 ```
-~/.agents/skills/galyarder-agent-framework/ → ~/.codex/galyarder-agent-framework/skills/
+~/.agents/skills/galyarder-framework/ → ~/.codex/galyarder-framework/skills/
 ```
 
-The `using-galyarder-agent-framework` skill is discovered automatically and enforces skill usage discipline — no additional configuration needed.
+The `using-galyarder-framework` skill is discovered automatically and enforces skill usage discipline — no additional configuration needed.
 
 ## Usage
 
 Skills are discovered automatically. Codex activates them when:
 - You mention a skill by name (e.g., "use brainstorming")
 - The task matches a skill's description
-- The `using-galyarder-agent-framework` skill directs Codex to use one
+- The `using-galyarder-framework` skill directs Codex to use one
 
 ## Subagents and Agent Roles
 
@@ -72,7 +72,7 @@ Codex and Galyarder work together in two layers:
 - `agents/*.md` are role definitions, not a native Codex agent registry
 
 When a skill says to dispatch a named agent such as
-`galyarder-agent-framework:code-reviewer`, read that as a cross-platform workflow
+`galyarder-framework:code-reviewer`, read that as a cross-platform workflow
 instruction:
 
 1. On hosts with named agent dispatch, use the named agent directly.
@@ -89,7 +89,7 @@ Codex adapter is responsible only for mapping those roles onto Codex-native
 subagent capabilities.
 
 For the exact Codex mapping, see
-[`skills/using-galyarder-agent-framework/references/codex-tools.md`](../skills/using-galyarder-agent-framework/references/codex-tools.md).
+[`skills/using-galyarder-framework/references/codex-tools.md`](../skills/using-galyarder-framework/references/codex-tools.md).
 
 ### Personal Skills
 
@@ -117,7 +117,7 @@ The `description` field is how Codex decides when to activate a skill automatica
 ## Updating
 
 ```bash
-cd ~/.codex/galyarder-agent-framework && git pull
+cd ~/.codex/galyarder-framework && git pull
 ```
 
 Skills update instantly through the symlink.
@@ -125,22 +125,22 @@ Skills update instantly through the symlink.
 ## Uninstalling
 
 ```bash
-rm ~/.agents/skills/galyarder-agent-framework
+rm ~/.agents/skills/galyarder-framework
 ```
 
 **Windows (PowerShell):**
 ```powershell
-Remove-Item "$env:USERPROFILE\.agents\skills\galyarder-agent-framework"
+Remove-Item "$env:USERPROFILE\.agents\skills\galyarder-framework"
 ```
 
-Optionally delete the clone: `rm -rf ~/.codex/galyarder-agent-framework` (Windows: `Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\galyarder-agent-framework"`).
+Optionally delete the clone: `rm -rf ~/.codex/galyarder-framework` (Windows: `Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\galyarder-framework"`).
 
 ## Troubleshooting
 
 ### Skills not showing up
 
-1. Verify the symlink: `ls -la ~/.agents/skills/galyarder-agent-framework`
-2. Check skills exist: `ls ~/.codex/galyarder-agent-framework/skills`
+1. Verify the symlink: `ls -la ~/.agents/skills/galyarder-framework`
+2. Check skills exist: `ls ~/.codex/galyarder-framework/skills`
 3. Restart Codex — skills are discovered at startup
 
 ### Windows junction issues
@@ -149,5 +149,5 @@ Junctions normally work without special permissions. If creation fails, try runn
 
 ## Getting Help
 
-- Report issues: https://github.com/galyarderlabs/galyarder-agent-framework/issues
-- Main documentation: https://github.com/galyarderlabs/galyarder-agent-framework
+- Report issues: https://github.com/galyarderlabs/galyarder-framework/issues
+- Main documentation: https://github.com/galyarderlabs/galyarder-framework

@@ -14,4 +14,4 @@ This command invokes the **code-reviewer** agent to audit the quality, security,
 4. **Actionable Feedback** - Categorizes issues by severity (Critical, Important, Minor).
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:requesting-code-review` and `code-review-expert` skills.
+**Note**: This command is powered by the `galyarder-framework:requesting-code-review` and `code-review-expert` skills.

@@ -19,4 +19,4 @@ User: /linear Break down this authentication PRD into tickets.
 ```
 
 ---
-**Note**: This command is powered by the `galyarder-agent-framework:linear-ticket-management` skill.
+**Note**: This command is powered by the `galyarder-framework:linear-ticket-management` skill.

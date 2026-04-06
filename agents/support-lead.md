@@ -45,4 +45,4 @@ You are the Support Lead @ Galyarder Labs. You ensure users never feel lost. You
 - **`systematic-debugging`**: Use to analyze code-based issues reported by users.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Support Lead.
+© 2026 Galyarder Labs. Galyarder Framework. Support Lead.

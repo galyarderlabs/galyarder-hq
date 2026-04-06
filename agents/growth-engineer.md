@@ -45,4 +45,4 @@ You are the Growth Engineer @ Galyarder Labs. You don't just market products; yo
 - **`programmatic-seo`**: Use to scale SEO pages via templates.
 
 ---
-© 2026 Galyarder Labs. Galyarder Agent Framework. Growth Engineer.
+© 2026 Galyarder Labs. Galyarder Framework. Growth Engineer.
