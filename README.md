@@ -111,6 +111,7 @@ Galyarder Agent Framework distributes tasks to specialized C-Suite agents as wel
 
 **The C-Suite (1-Man Army Edition)**
 - **`galyarder-specialist`** - Master workflow manager and orchestrator.
+- **`obsidian-architect`** - Digital Garden & Visual Architect. Manages Canvas mapping, technical KB, and automated journaling.
 - **`product-manager`** - Linear ticket management and ROI prioritization.
 - **`analytics-architect`** - Tracking schema and KPI enforcement.
 - **`finops-manager`** - Cloud cost optimization and pricing strategy.
@@ -170,7 +171,7 @@ Galyarder Agent Framework provides short-hand commands for rapid execution:
 - **Testing & Debugging**: `test-driven-development` (RED-GREEN-REFACTOR cycle), `systematic-debugging` (4-phase root cause), `verification-before-completion`.
 - **Growth & Marketing**: `seo-audit`, `schema-markup`, `onboarding-cro`, `marketing-psychology`, `copywriting`, `viral-referral-loops`.
 - **Product Management**: `linear-ticket-management`, `prd-to-plan`, `prd-to-issues`, `write-a-prd`, `ubiquitous-language`.
-- **Collaboration**: `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`.
+- **Collaboration & Documentation**: `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `obsidian-cli`, `json-canvas`, `obsidian-bases`, `obsidian-markdown`, `defuddle`.
 - **Video & Content**: `remotion-best-practices`, `video-generation`, `email-sequence`.
 - **Meta**: `writing-skills`, `using-galyarder-agent-framework`.
 
