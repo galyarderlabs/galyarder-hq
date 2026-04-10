@@ -1,5 +1,5 @@
 {
-  "name": "@paperclipai/adapter-claude-local",
+  "name": "@galyarder-framework/adapter-claude-local",
   "version": "0.3.1",
   "license": "MIT",
   "homepage": "https://github.com/galyarder/galyarder",
@@ -53,7 +53,7 @@
     "probe:quota:raw": "pnpm exec tsx src/cli/quota-probe.ts --json --raw-cli"
   },
   "dependencies": {
-    "@paperclipai/adapter-utils": "workspace:*",
+    "@galyarder-framework/adapter-utils": "workspace:*",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "@paperclipai/mcp-server",
+  "name": "@galyarder-framework/mcp-server",
   "version": "0.1.0",
   "license": "MIT",
   "homepage": "https://github.com/galyarder/galyarder",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@paperclipai/shared": "workspace:*",
+    "@galyarder-framework/shared": "workspace:*",
     "zod": "^3.24.2"
   },
   "devDependencies": {

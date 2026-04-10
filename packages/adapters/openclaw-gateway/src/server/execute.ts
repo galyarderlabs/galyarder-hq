@@ -2,7 +2,7 @@ import type {
   AdapterExecutionContext,
   AdapterExecutionResult,
   AdapterRuntimeServiceReport,
-} from "@paperclipai/adapter-utils";
+} from "@galyarder-framework/adapter-utils";
 import {
   asNumber,
   asString,
@@ -10,7 +10,7 @@ import {
   parseObject,
   renderGalyarderWakePrompt,
   stringifyGalyarderWakePayload,
-} from "@paperclipai/adapter-utils/server-utils";
+} from "@galyarder-framework/adapter-utils/server-utils";
 import crypto, { randomUUID } from "node:crypto";
 import { WebSocket } from "ws";
 

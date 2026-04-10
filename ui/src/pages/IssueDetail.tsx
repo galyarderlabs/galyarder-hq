@@ -82,7 +82,7 @@ import {
   type Issue,
   type IssueAttachment,
   type IssueComment,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 
 type CommentReassignment = IssueCommentReassignment;
 type IssueDetailComment = (IssueComment | OptimisticIssueComment) & {

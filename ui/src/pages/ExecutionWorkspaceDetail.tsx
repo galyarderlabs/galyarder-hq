@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "@/lib/router";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import type { ExecutionWorkspace, Project, ProjectWorkspace } from "@paperclipai/shared";
+import type { ExecutionWorkspace, Project, ProjectWorkspace } from "@galyarder-framework/shared";
 import { ArrowLeft, Check, Copy, ExternalLink, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";

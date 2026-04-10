@@ -1,5 +1,5 @@
 import { and, asc, desc, eq, inArray, isNull, ne, or, sql } from "drizzle-orm";
-import type { Db } from "@paperclipai/db";
+import type { Db } from "@galyarder-framework/db";
 import {
   activityLog,
   agents,
@@ -21,9 +21,9 @@ import {
   labels,
   projectWorkspaces,
   projects,
-} from "@paperclipai/db";
-import type { IssueRelationIssueSummary } from "@paperclipai/shared";
-import { extractAgentMentionIds, extractProjectMentionIds, isUuidLike } from "@paperclipai/shared";
+} from "@galyarder-framework/db";
+import type { IssueRelationIssueSummary } from "@galyarder-framework/shared";
+import { extractAgentMentionIds, extractProjectMentionIds, isUuidLike } from "@galyarder-framework/shared";
 import { conflict, notFound, unprocessable } from "../errors.js";
 import {
   defaultIssueExecutionWorkspaceSettingsForProject,

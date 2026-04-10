@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { resolveGalyarderConfigPath, resolveGalyarderEnvPath } from "./paths.js";
-import type { DeploymentExposure, DeploymentMode } from "@paperclipai/shared";
+import type { DeploymentExposure, DeploymentMode } from "@galyarder-framework/shared";
 
 import { parse as parseEnvFileContents } from "dotenv";
 

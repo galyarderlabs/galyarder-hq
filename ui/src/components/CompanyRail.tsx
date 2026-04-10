@@ -28,7 +28,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import type { Company } from "@paperclipai/shared";
+import type { Company } from "@galyarder-framework/shared";
 import { CompanyPatternIcon } from "./CompanyPatternIcon";
 
 const ORDER_STORAGE_KEY = "galyarder.companyOrder";
@@ -326,8 +326,5 @@ export function CompanyRail() {
         </Tooltip>
       </div>
     </div>
-  );
-}
->
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@paperclipai/adapter-gemini-local",
+  "name": "@galyarder-framework/adapter-gemini-local",
   "version": "0.3.1",
   "license": "MIT",
   "homepage": "https://github.com/galyarder/galyarder",
@@ -51,7 +51,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@paperclipai/adapter-utils": "workspace:*",
+    "@galyarder-framework/adapter-utils": "workspace:*",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {

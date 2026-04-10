@@ -9,9 +9,9 @@
  * @see PLUGIN_SPEC.md §10 — Plugin Manifest
  * @see packages/shared/src/validators/plugin.ts — Zod schema definition
  */
-import { pluginManifestV1Schema } from "@paperclipai/shared";
-import type { Galyarder DashboardPluginManifestV1 } from "@paperclipai/shared";
-import { PLUGIN_API_VERSION } from "@paperclipai/shared";
+import { pluginManifestV1Schema } from "@galyarder-framework/shared";
+import type { GalyarderDashboardPluginManifestV1 } from "@galyarder-framework/shared";
+import { PLUGIN_API_VERSION } from "@galyarder-framework/shared";
 import { badRequest } from "../errors.js";
 
 // ---------------------------------------------------------------------------
@@ -34,7 +34,7 @@ const SUPPORTED_VERSIONS = [PLUGIN_API_VERSION] as const;
  */
 export interface ManifestParseSuccess {
   success: true;
-  manifest: Galyarder DashboardPluginManifestV1;
+  manifest: GalyarderDashboardPluginManifestV1;
 }
 
 /**
@@ -79,7 +79,7 @@ export interface PluginManifestValidator {
    *
    * @throws {HttpError} 400 Bad Request if the manifest is invalid.
    */
-  parseOrThrow(input: unknown): Galyarder DashboardPluginManifestV1;
+  parseOrThrow(input: unknown): GalyarderDashboardPluginManifestV1;
 
   /**
    * Return the list of plugin API versions supported by this host.
@@ -124,7 +124,7 @@ export function pluginManifestValidator(): PluginManifestValidator {
       if (result.success) {
         return {
           success: true,
-          manifest: result.data as Galyarder DashboardPluginManifestV1,
+          manifest: result.data as GalyarderDashboardPluginManifestV1,
         };
       }
 
@@ -146,7 +146,7 @@ export function pluginManifestValidator(): PluginManifestValidator {
       };
     },
 
-    parseOrThrow(input: unknown): Galyarder DashboardPluginManifestV1 {
+    parseOrThrow(input: unknown): GalyarderDashboardPluginManifestV1 {
       const result = this.parse(input);
 
       if (!result.success) {

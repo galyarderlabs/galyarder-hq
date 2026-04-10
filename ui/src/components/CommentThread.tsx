@@ -7,7 +7,7 @@ import type {
   FeedbackVote,
   FeedbackVoteValue,
   IssueComment,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Copy, Galyarder Dashboard } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";

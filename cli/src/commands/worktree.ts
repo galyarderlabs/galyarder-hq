@@ -43,7 +43,7 @@ import {
   runDatabaseRestore,
   createEmbeddedPostgresLogBuffer,
   formatEmbeddedPostgresError,
-} from "@paperclipai/db";
+} from "@galyarder-framework/db";
 import type { Command } from "commander";
 import { ensureAgentJwtSecret, loadGalyarderEnvFile, mergeGalyarderEnvEntries, readGalyarderEnvEntries, resolveGalyarderEnvFile } from "../config/env.js";
 import { expandHomePrefix } from "../config/home.js";

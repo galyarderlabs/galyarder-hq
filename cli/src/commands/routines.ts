@@ -10,7 +10,7 @@ import {
   ensurePostgresDatabase,
   formatEmbeddedPostgresError,
   routines,
-} from "@paperclipai/db";
+} from "@galyarder-framework/db";
 import { eq, inArray } from "drizzle-orm";
 import { loadGalyarderEnvFile } from "../config/env.js";
 import { readConfig, resolveConfigPath } from "../config/store.js";

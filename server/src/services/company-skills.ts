@@ -3,10 +3,10 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { and, asc, eq } from "drizzle-orm";
-import type { Db } from "@paperclipai/db";
-import { companySkills } from "@paperclipai/db";
-import { readGalyarderSkillSyncPreference } from "@paperclipai/adapter-utils/server-utils";
-import type { Galyarder DashboardSkillEntry } from "@paperclipai/adapter-utils/server-utils";
+import type { Db } from "@galyarder-framework/db";
+import { companySkills } from "@galyarder-framework/db";
+import { readGalyarderSkillSyncPreference } from "@galyarder-framework/adapter-utils/server-utils";
+import type { GalyarderDashboardSkillEntry } from "@galyarder-framework/adapter-utils/server-utils";
 import type {
   CompanySkill,
   CompanySkillCreateRequest,
@@ -25,8 +25,8 @@ import type {
   CompanySkillTrustLevel,
   CompanySkillUpdateStatus,
   CompanySkillUsageAgent,
-} from "@paperclipai/shared";
-import { normalizeAgentUrlKey } from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
+import { normalizeAgentUrlKey } from "@galyarder-framework/shared";
 import { findActiveServerAdapter } from "../adapters/index.js";
 import { resolveGalyarderInstanceRoot } from "../home-paths.js";
 import { notFound, unprocessable } from "../errors.js";
@@ -2059,7 +2059,7 @@ export function companySkillService(db: Db) {
   ): Promise<GalyarderSkillEntry[]> {
     const skills = await listFull(companyId);
 
-    const out: Galyarder DashboardSkillEntry[] = [];
+    const out: GalyarderDashboardSkillEntry[] = [];
     for (const skill of skills) {
       const sourceKind = asString(getSkillMeta(skill).sourceKind);
       let source = normalizeSkillDirectory(skill);

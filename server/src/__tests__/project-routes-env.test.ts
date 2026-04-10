@@ -22,9 +22,9 @@ const mockLogActivity = vi.hoisted(() => vi.fn());
 const mockTrackProjectCreated = vi.hoisted(() => vi.fn());
 const mockGetTelemetryClient = vi.hoisted(() => vi.fn());
 
-vi.mock("@paperclipai/shared/telemetry", async () => {
-  const actual = await vi.importActual<typeof import("@paperclipai/shared/telemetry")>(
-    "@paperclipai/shared/telemetry",
+vi.mock("@galyarder-framework/shared/telemetry", async () => {
+  const actual = await vi.importActual<typeof import("@galyarder-framework/shared/telemetry")>(
+    "@galyarder-framework/shared/telemetry",
   );
   return {
     ...actual,

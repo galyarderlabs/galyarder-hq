@@ -3,7 +3,7 @@ import {
   TelemetryClient,
   resolveTelemetryConfig,
   loadOrCreateState,
-} from "@paperclipai/shared/telemetry";
+} from "@galyarder-framework/shared/telemetry";
 import { resolveGalyarderInstanceRoot } from "./home-paths.js";
 import { serverVersion } from "./version.js";
 

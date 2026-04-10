@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Issue } from "@paperclipai/shared";
+import type { Issue } from "@galyarder-framework/shared";
 import { Link } from "@/lib/router";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { StatusIcon } from "./StatusIcon";

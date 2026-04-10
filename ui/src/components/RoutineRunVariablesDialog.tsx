@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { IssueExecutionWorkspaceSettings, Project, RoutineVariable } from "@paperclipai/shared";
+import type { IssueExecutionWorkspaceSettings, Project, RoutineVariable } from "@galyarder-framework/shared";
 import { useQuery } from "@tanstack/react-query";
 import { instanceSettingsApi } from "../api/instanceSettings";
 import { queryKeys } from "../lib/queryKeys";

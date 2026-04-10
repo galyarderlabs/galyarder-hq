@@ -1,18 +1,18 @@
 import type { ComponentType } from "react";
-import type { CreateConfigValues } from "@paperclipai/adapter-utils";
+import type { CreateConfigValues } from "@galyarder-framework/adapter-utils";
 
 // Re-export shared types so local consumers don't need to change imports
-export type { TranscriptEntry, StdoutLineParser, CreateConfigValues } from "@paperclipai/adapter-utils";
+export type { TranscriptEntry, StdoutLineParser, CreateConfigValues } from "@galyarder-framework/adapter-utils";
 
 export interface StatefulStdoutParser {
-  parseLine: (line: string, ts: string) => import("@paperclipai/adapter-utils").TranscriptEntry[];
+  parseLine: (line: string, ts: string) => import("@galyarder-framework/adapter-utils").TranscriptEntry[];
   reset: () => void;
 }
 
 export type StdoutParserFactory = () => StatefulStdoutParser;
 
 export interface TranscriptParserSource {
-  parseStdoutLine: (line: string, ts: string) => import("@paperclipai/adapter-utils").TranscriptEntry[];
+  parseStdoutLine: (line: string, ts: string) => import("@galyarder-framework/adapter-utils").TranscriptEntry[];
   createStdoutParser?: StdoutParserFactory;
 }
 

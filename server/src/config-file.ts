@@ -1,8 +1,8 @@
 import fs from "node:fs";
-import { galyarderConfigSchema, type Galyarder DashboardConfig } from "@paperclipai/shared";
+import { galyarderConfigSchema, type GalyarderDashboardConfig } from "@galyarder-framework/shared";
 import { resolveGalyarderConfigPath } from "./paths.js";
 
-export function readConfigFile(): Galyarder DashboardConfig | null {
+export function readConfigFile(): GalyarderDashboardConfig | null {
   const configPath = resolveGalyarderConfigPath();
 
   if (!fs.existsSync(configPath)) return null;

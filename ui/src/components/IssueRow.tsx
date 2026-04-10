@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { Issue } from "@paperclipai/shared";
+import type { Issue } from "@galyarder-framework/shared";
 import { Link } from "@/lib/router";
 import { X } from "lucide-react";
 import { createIssueDetailPath, rememberIssueDetailLocationState } from "../lib/issueDetailBreadcrumb";

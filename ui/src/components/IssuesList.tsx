@@ -24,7 +24,7 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 import { CircleDot, Plus, Filter, ArrowUpDown, Layers, Check, X, ChevronRight, List, Columns3, User, Search } from "lucide-react";
 import { KanbanBoard } from "./KanbanBoard";
 import { buildIssueTree, countDescendants } from "../lib/issue-tree";
-import type { Issue } from "@paperclipai/shared";
+import type { Issue } from "@galyarder-framework/shared";
 
 /* ── Helpers ── */
 

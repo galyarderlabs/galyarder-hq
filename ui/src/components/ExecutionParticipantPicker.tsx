@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Agent, Issue } from "@paperclipai/shared";
+import type { Agent, Issue } from "@galyarder-framework/shared";
 import { formatAssigneeUserLabel } from "../lib/assignees";
 import { sortAgentsByRecency, getRecentAssigneeIds } from "../lib/recent-assignees";
 import {

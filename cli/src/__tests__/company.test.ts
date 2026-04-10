@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { CompanyPortabilityPreviewResult } from "@paperclipai/shared";
+import type { CompanyPortabilityPreviewResult } from "@galyarder-framework/shared";
 import {
   buildCompanyDashboardUrl,
   buildDefaultImportAdapterOverrides,

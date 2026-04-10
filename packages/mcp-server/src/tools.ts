@@ -7,7 +7,7 @@ import {
   updateIssueSchema,
   upsertIssueDocumentSchema,
   linkIssueApprovalSchema,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import { GalyarderApiClient } from "./client.js";
 import { formatErrorResponse, formatTextResponse } from "./format.js";
 

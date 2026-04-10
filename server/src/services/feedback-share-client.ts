@@ -1,5 +1,5 @@
 import { gzipSync } from "node:zlib";
-import type { FeedbackTraceBundle } from "@paperclipai/shared";
+import type { FeedbackTraceBundle } from "@galyarder-framework/shared";
 import type { Config } from "../config.js";
 
 const DEFAULT_FEEDBACK_EXPORT_BACKEND_URL = "https://telemetry.galyarder.ing";

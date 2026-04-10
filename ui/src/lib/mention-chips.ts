@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import { parseAgentMentionHref, parseProjectMentionHref, parseSkillMentionHref } from "@paperclipai/shared";
+import { parseAgentMentionHref, parseProjectMentionHref, parseSkillMentionHref } from "@galyarder-framework/shared";
 import { getAgentIcon } from "./agent-icons";
 import { hexToRgb, pickTextColorForPillBg } from "./color-contrast";
 

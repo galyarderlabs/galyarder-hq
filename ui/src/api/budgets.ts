@@ -4,7 +4,7 @@ import type {
   BudgetOverview,
   BudgetPolicySummary,
   BudgetPolicyUpsertInput,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import { api } from "./client";
 
 export const budgetsApi = {

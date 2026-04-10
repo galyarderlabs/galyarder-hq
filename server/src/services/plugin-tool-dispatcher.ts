@@ -22,12 +22,12 @@
  * @see PLUGIN_SPEC.md §13.10 — `executeTool`
  */
 
-import type { Db } from "@paperclipai/db";
+import type { Db } from "@galyarder-framework/db";
 import type {
-  Galyarder DashboardPluginManifestV1,
+  GalyarderDashboardPluginManifestV1,
   PluginRecord,
-} from "@paperclipai/shared";
-import type { ToolRunContext, ToolResult } from "@paperclipai/plugin-sdk";
+} from "@galyarder-framework/shared";
+import type { ToolRunContext, ToolResult } from "@galyarder-framework/plugin-sdk";
 import type { PluginWorkerManager } from "./plugin-worker-manager.js";
 import type { PluginLifecycleManager } from "./plugin-lifecycle.js";
 import {
@@ -155,7 +155,7 @@ export interface PluginToolDispatcher {
    */
   registerPluginTools(
     pluginId: string,
-    manifest: Galyarder DashboardPluginManifestV1,
+    manifest: GalyarderDashboardPluginManifestV1,
   ): void;
 
   /**
@@ -428,7 +428,7 @@ export function createPluginToolDispatcher(
 
     registerPluginTools(
       pluginId: string,
-      manifest: Galyarder DashboardPluginManifestV1,
+      manifest: GalyarderDashboardPluginManifestV1,
     ): void {
       registry.registerPlugin(pluginId, manifest);
     },

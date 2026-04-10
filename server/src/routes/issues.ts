@@ -2,8 +2,8 @@ import { randomUUID } from "node:crypto";
 import { Router, type Request, type Response } from "express";
 import multer from "multer";
 import { z } from "zod";
-import type { Db } from "@paperclipai/db";
-import { issueExecutionDecisions } from "@paperclipai/db";
+import type { Db } from "@galyarder-framework/db";
+import { issueExecutionDecisions } from "@galyarder-framework/db";
 import {
   addIssueCommentSchema,
   createIssueAttachmentMetadataSchema,
@@ -24,8 +24,8 @@ import {
   getClosedIsolatedExecutionWorkspaceMessage,
   isClosedIsolatedExecutionWorkspace,
   type ExecutionWorkspace,
-} from "@paperclipai/shared";
-import { trackAgentTaskCompleted } from "@paperclipai/shared/telemetry";
+} from "@galyarder-framework/shared";
+import { trackAgentTaskCompleted } from "@galyarder-framework/shared/telemetry";
 import { getTelemetryClient } from "../telemetry.js";
 import type { StorageService } from "../storage/types.js";
 import { validate } from "../middleware/validate.js";

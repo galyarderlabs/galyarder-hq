@@ -5,14 +5,14 @@ import { fileURLToPath } from "node:url";
 import type {
   AdapterSkillContext,
   AdapterSkillSnapshot,
-} from "@paperclipai/adapter-utils";
+} from "@galyarder-framework/adapter-utils";
 import {
   buildPersistentSkillSnapshot,
   ensureGalyarderSkillSymlink,
   readGalyarderRuntimeSkillEntries,
   readInstalledSkillTargets,
   resolveGalyarderDesiredSkillNames,
-} from "@paperclipai/adapter-utils/server-utils";
+} from "@galyarder-framework/adapter-utils/server-utils";
 
 const __moduleDir = path.dirname(fileURLToPath(import.meta.url));
 

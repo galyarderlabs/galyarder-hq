@@ -1,4 +1,4 @@
-import type { GalyarderPluginManifestV1 } from "@paperclipai/plugin-sdk";
+import type { GalyarderPluginManifestV1 } from "@galyarder-framework/plugin-sdk";
 
 const manifest: GalyarderPluginManifestV1 = {
   id: "galyarder.plugin-authoring-smoke-example",

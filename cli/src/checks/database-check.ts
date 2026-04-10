@@ -16,7 +16,7 @@ export async function databaseCheck(config: GalyarderConfig, configPath?: string
     }
 
     try {
-      const { createDb } = await import("@paperclipai/db");
+      const { createDb } = await import("@galyarder-framework/db");
       const db = createDb(config.database.connectionString);
       await db.execute("SELECT 1");
       return {

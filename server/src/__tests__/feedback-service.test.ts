@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { eq } from "drizzle-orm";
 import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from "vitest";
-import { writeGalyarderSkillSyncPreference } from "@paperclipai/adapter-utils/server-utils";
+import { writeGalyarderSkillSyncPreference } from "@galyarder-framework/adapter-utils/server-utils";
 import {
   agents,
   applyPendingMigrations,
@@ -23,7 +23,7 @@ import {
   issueComments,
   issueDocuments,
   issues,
-} from "@paperclipai/db";
+} from "@galyarder-framework/db";
 import { feedbackService } from "../services/feedback.ts";
 
 type EmbeddedPostgresInstance = {

@@ -1,4 +1,4 @@
-import type { Project } from "@paperclipai/shared";
+import type { Project } from "@galyarder-framework/shared";
 
 export const PROJECT_ORDER_UPDATED_EVENT = "galyarder:project-order-updated";
 const PROJECT_ORDER_STORAGE_PREFIX = "galyarder.projectOrder";

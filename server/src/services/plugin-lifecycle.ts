@@ -36,12 +36,12 @@
  * @see PLUGIN_SPEC.md §12.5 — Graceful Shutdown Policy
  */
 import { EventEmitter } from "node:events";
-import type { Db } from "@paperclipai/db";
+import type { Db } from "@galyarder-framework/db";
 import type {
   PluginStatus,
   PluginRecord,
-  Galyarder DashboardPluginManifestV1,
-} from "@paperclipai/shared";
+  GalyarderDashboardPluginManifestV1,
+} from "@galyarder-framework/shared";
 import { pluginRegistryService } from "./plugin-registry.js";
 import { pluginLoader, type PluginLoader } from "./plugin-loader.js";
 import type { PluginWorkerManager, WorkerStartOptions } from "./plugin-worker-manager.js";

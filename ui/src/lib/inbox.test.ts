@@ -9,7 +9,7 @@ import type {
   Issue,
   JoinRequest,
   ProjectWorkspace,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import {
   DEFAULT_INBOX_ISSUE_COLUMNS,
   computeInboxBadgeData,

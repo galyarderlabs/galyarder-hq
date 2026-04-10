@@ -9,7 +9,7 @@ import type {
   IssueComment,
   Agent,
   Goal,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import type {
   EventFilter,
   PluginContext,

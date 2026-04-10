@@ -1,4 +1,4 @@
-import type { Goal } from "@paperclipai/shared";
+import type { Goal } from "@galyarder-framework/shared";
 
 export const ONBOARDING_PROJECT_NAME = "Onboarding";
 

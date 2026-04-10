@@ -15,7 +15,7 @@ import type {
   FeedbackDataSharingPreference,
   FeedbackVote,
   FeedbackVoteValue,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import type { ActiveRunForIssue, LiveRunForIssue } from "../api/heartbeats";
 import { useLiveRunTranscripts } from "./transcript/useLiveRunTranscripts";
 import { useGalyarderIssueRuntime, type GalyarderIssueRuntimeReassignment } from "../hooks/useGalyarderIssueRuntime";

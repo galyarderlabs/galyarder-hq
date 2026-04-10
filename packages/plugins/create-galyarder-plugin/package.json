@@ -1,5 +1,5 @@
 {
-  "name": "@paperclipai/create-paperclip-plugin",
+  "name": "@galyarder-framework/create-paperclip-plugin",
   "version": "0.1.0",
   "license": "MIT",
   "homepage": "https://github.com/galyarder/galyarder",
@@ -41,7 +41,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@paperclipai/plugin-sdk": "workspace:*"
+    "@galyarder-framework/plugin-sdk": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",

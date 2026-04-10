@@ -1,4 +1,4 @@
-import type { PluginLauncherRegistration } from "@paperclipai/plugin-sdk";
+import type { PluginLauncherRegistration } from "@galyarder-framework/plugin-sdk";
 
 export const PLUGIN_ID = "galyarder-kitchen-sink-example";
 export const PLUGIN_VERSION = "0.1.0";

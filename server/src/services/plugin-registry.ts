@@ -1,5 +1,5 @@
 import { asc, eq, ne, sql, and } from "drizzle-orm";
-import type { Db } from "@paperclipai/db";
+import type { Db } from "@galyarder-framework/db";
 import {
   plugins,
   pluginConfig,
@@ -7,9 +7,9 @@ import {
   pluginJobs,
   pluginJobRuns,
   pluginWebhookDeliveries,
-} from "@paperclipai/db";
+} from "@galyarder-framework/db";
 import type {
-  Galyarder DashboardPluginManifestV1,
+  GalyarderDashboardPluginManifestV1,
   PluginStatus,
   InstallPlugin,
   UpdatePluginStatus,
@@ -24,7 +24,7 @@ import type {
   PluginJobRunStatus,
   PluginJobRunTrigger,
   PluginWebhookDeliveryStatus,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import { conflict, notFound } from "../errors.js";
 
 // ---------------------------------------------------------------------------
@@ -134,7 +134,7 @@ export function pluginRegistryService(db: Db) {
      * manifest from the package.  This method persists the plugin row and
      * assigns the next install order.
      */
-    install: async (input: InstallPlugin, manifest: Galyarder DashboardPluginManifestV1) => {
+    install: async (input: InstallPlugin, manifest: GalyarderDashboardPluginManifestV1) => {
       const existing = await getByKey(manifest.id);
       if (existing) {
         if (existing.status !== "uninstalled") {
@@ -198,7 +198,7 @@ export function pluginRegistryService(db: Db) {
       data: {
         packageName?: string;
         version?: string;
-        manifest?: Galyarder DashboardPluginManifestV1;
+        manifest?: GalyarderDashboardPluginManifestV1;
       },
     ) => {
       const plugin = await getById(id);

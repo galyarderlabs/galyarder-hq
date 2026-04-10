@@ -1,6 +1,6 @@
 import { Router, type Request } from "express";
-import type { Db } from "@paperclipai/db";
-import { AGENT_ICON_NAMES } from "@paperclipai/shared";
+import type { Db } from "@galyarder-framework/db";
+import { AGENT_ICON_NAMES } from "@galyarder-framework/shared";
 import { forbidden } from "../errors.js";
 import { listServerAdapters } from "../adapters/index.js";
 import { agentService } from "../services/agents.js";

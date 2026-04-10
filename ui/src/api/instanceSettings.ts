@@ -3,7 +3,7 @@ import type {
   InstanceGeneralSettings,
   PatchInstanceGeneralSettings,
   PatchInstanceExperimentalSettings,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import { api } from "./client";
 
 export const instanceSettingsApi = {

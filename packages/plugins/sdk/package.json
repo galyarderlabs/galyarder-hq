@@ -1,5 +1,5 @@
 {
-  "name": "@paperclipai/plugin-sdk",
+  "name": "@galyarder-framework/plugin-sdk",
   "version": "1.0.0",
   "description": "Stable public API for Galyarder plugins — worker-side context and UI bridge hooks",
   "license": "MIT",
@@ -101,13 +101,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm --filter @paperclipai/shared build && tsc",
+    "build": "pnpm --filter @galyarder-framework/shared build && tsc",
     "clean": "rm -rf dist",
-    "typecheck": "pnpm --filter @paperclipai/shared build && tsc --noEmit",
+    "typecheck": "pnpm --filter @galyarder-framework/shared build && tsc --noEmit",
     "dev:server": "tsx src/dev-cli.ts"
   },
   "dependencies": {
-    "@paperclipai/shared": "workspace:*",
+    "@galyarder-framework/shared": "workspace:*",
     "zod": "^3.24.2"
   },
   "devDependencies": {

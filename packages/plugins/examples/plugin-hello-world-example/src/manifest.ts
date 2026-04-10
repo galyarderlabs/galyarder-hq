@@ -1,4 +1,4 @@
-import type { GalyarderPluginManifestV1 } from "@paperclipai/plugin-sdk";
+import type { GalyarderPluginManifestV1 } from "@galyarder-framework/plugin-sdk";
 
 /**
  * Stable plugin ID used by host registration and namespacing.

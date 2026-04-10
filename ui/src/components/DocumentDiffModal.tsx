@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import type { DocumentRevision } from "@paperclipai/shared";
+import type { DocumentRevision } from "@galyarder-framework/shared";
 import { issuesApi } from "../api/issues";
 import { queryKeys } from "../lib/queryKeys";
 import { relativeTime } from "../lib/utils";

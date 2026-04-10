@@ -1,4 +1,4 @@
-import type { AgentAdapterType, JoinRequest } from "@paperclipai/shared";
+import type { AgentAdapterType, JoinRequest } from "@galyarder-framework/shared";
 import { api } from "./client";
 
 type InviteSummary = {

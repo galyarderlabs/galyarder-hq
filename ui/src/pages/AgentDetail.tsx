@@ -89,8 +89,8 @@ import {
   type AgentRuntimeState,
   type LiveEvent,
   type WorkspaceOperation,
-} from "@paperclipai/shared";
-import { redactHomePathUserSegments, redactHomePathUserSegmentsInValue } from "@paperclipai/adapter-utils";
+} from "@galyarder-framework/shared";
+import { redactHomePathUserSegments, redactHomePathUserSegmentsInValue } from "@galyarder-framework/adapter-utils";
 import { agentRouteRef } from "../lib/utils";
 import {
   applyAgentSkillSnapshot,
@@ -1724,7 +1724,6 @@ function PromptsTab({
     agent.adapterType === "codex_local" ||
     agent.adapterType === "opencode_local" ||
     agent.adapterType === "pi_local" ||
-    agent.adapterType === "hermes_local" ||
     agent.adapterType === "cursor";
 
   const { data: bundle, isLoading: bundleLoading } = useQuery({

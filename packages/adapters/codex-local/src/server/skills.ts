@@ -4,11 +4,11 @@ import type {
   AdapterSkillContext,
   AdapterSkillEntry,
   AdapterSkillSnapshot,
-} from "@paperclipai/adapter-utils";
+} from "@galyarder-framework/adapter-utils";
 import {
   readGalyarderRuntimeSkillEntries,
   resolveGalyarderDesiredSkillNames,
-} from "@paperclipai/adapter-utils/server-utils";
+} from "@galyarder-framework/adapter-utils/server-utils";
 
 const __moduleDir = path.dirname(fileURLToPath(import.meta.url));
 

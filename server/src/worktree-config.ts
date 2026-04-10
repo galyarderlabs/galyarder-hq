@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import type { GalyarderDashboardConfig } from "@paperclipai/shared";
+import type { GalyarderDashboardConfig } from "@galyarder-framework/shared";
 import { resolveGalyarderConfigPath, resolveGalyarderEnvPath } from "./paths.js";
 
 function nonEmpty(value: string | null | undefined): string | null {
@@ -144,7 +144,7 @@ function resolveWorktreeRuntimeContext(
   };
 }
 
-function writeConfigFile(configPath: string, config: Galyarder DashboardConfig): void {
+function writeConfigFile(configPath: string, config: GalyarderDashboardConfig): void {
   fs.mkdirSync(path.dirname(configPath), { recursive: true });
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2) + "\n", { mode: 0o600 });
 }
@@ -192,7 +192,7 @@ function collectSiblingWorktreePorts(context: WorktreeRuntimeContext): {
 
   for (const siblingConfigPath of siblingConfigPaths) {
     try {
-      const siblingConfig = JSON.parse(fs.readFileSync(siblingConfigPath, "utf8")) as Galyarder DashboardConfig;
+      const siblingConfig = JSON.parse(fs.readFileSync(siblingConfigPath, "utf8")) as GalyarderDashboardConfig;
       if (Number.isInteger(siblingConfig.server.port) && siblingConfig.server.port > 0) {
         serverPorts.add(siblingConfig.server.port);
       }
@@ -220,19 +220,19 @@ function findNextUnclaimedPort(preferredPort: number, claimedPorts: Set<number>)
 }
 
 function buildIsolatedWorktreeConfig(
-  config: Galyarder DashboardConfig,
+  config: GalyarderDashboardConfig,
   context: WorktreeRuntimeContext,
   portOverrides?: {
     serverPort?: number;
     databasePort?: number;
   },
-): Galyarder DashboardConfig {
+): GalyarderDashboardConfig {
   const serverPort = portOverrides?.serverPort ?? config.server.port;
   const databasePort =
     config.database.mode === "embedded-postgres"
       ? portOverrides?.databasePort ?? config.database.embeddedPostgresPort
       : undefined;
-  const nextConfig: Galyarder DashboardConfig = {
+  const nextConfig: GalyarderDashboardConfig = {
     ...config,
     database: {
       ...config.database,
@@ -282,7 +282,7 @@ function buildIsolatedWorktreeConfig(
 }
 
 function needsWorktreeConfigRepair(
-  config: Galyarder DashboardConfig,
+  config: GalyarderDashboardConfig,
   context: WorktreeRuntimeContext,
 ): boolean {
   if (config.database.mode === "embedded-postgres") {
@@ -308,14 +308,14 @@ function needsWorktreeConfigRepair(
 }
 
 export function applyRuntimePortSelectionToConfig(
-  config: Galyarder DashboardConfig,
+  config: GalyarderDashboardConfig,
   input: {
     serverPort: number;
     databasePort?: number | null;
     allowServerPortWrite?: boolean;
     allowDatabasePortWrite?: boolean;
   },
-): { config: Galyarder DashboardConfig; changed: boolean } {
+): { config: GalyarderDashboardConfig; changed: boolean } {
   let changed = false;
   let nextConfig = config;
 
@@ -381,7 +381,7 @@ export function maybeRepairLegacyWorktreeConfigAndEnvFiles(): {
   let repairedConfig = false;
   if (fs.existsSync(context.configPath)) {
     try {
-      const parsed = JSON.parse(fs.readFileSync(context.configPath, "utf8")) as Galyarder DashboardConfig;
+      const parsed = JSON.parse(fs.readFileSync(context.configPath, "utf8")) as GalyarderDashboardConfig;
       const siblingPorts = collectSiblingWorktreePorts(context);
       const hasSiblingPortCollision =
         siblingPorts.serverPorts.has(parsed.server.port) ||
@@ -447,9 +447,9 @@ export function maybePersistWorktreeRuntimePorts(input: {
   const context = resolveWorktreeRuntimeContext(process.env);
   if (!context || !fs.existsSync(context.configPath)) return;
 
-  let fileConfig: Galyarder DashboardConfig;
+  let fileConfig: GalyarderDashboardConfig;
   try {
-    fileConfig = JSON.parse(fs.readFileSync(context.configPath, "utf8")) as Galyarder DashboardConfig;
+    fileConfig = JSON.parse(fs.readFileSync(context.configPath, "utf8")) as GalyarderDashboardConfig;
   } catch {
     return;
   }

@@ -1,4 +1,4 @@
-import type { GalyarderPluginManifestV1 } from "@paperclipai/plugin-sdk";
+import type { GalyarderPluginManifestV1 } from "@galyarder-framework/plugin-sdk";
 
 const PLUGIN_ID = "galyarder-file-browser-example";
 const FILES_SIDEBAR_SLOT_ID = "files-link";

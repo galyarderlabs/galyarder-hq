@@ -6,7 +6,7 @@ import {
   resubmitApprovalSchema,
   type Approval,
   type ApprovalComment,
-} from "@paperclipai/shared";
+} from "@galyarder-framework/shared";
 import {
   addCommonClientOptions,
   formatInlineRecord,
