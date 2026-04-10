@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Galyarder Framework adapter - executes Framework agents and skills",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
+    "@paperclipai/adapter-utils": "^2026.403.0",
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
