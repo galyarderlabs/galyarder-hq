@@ -21,9 +21,9 @@
     "operations",
     "workflows"
   ],
-  "personas": "./personas/",
-  "agents": "./agents/",
-  "skills": "./skills/",
-  "commands": "./commands/",
-  "hooks": "./hooks/hooks-cursor.json"
+  "personas": "./framework/personas/",
+  "agents": "./framework/agents/",
+  "skills": "./framework/skills/",
+  "commands": "./framework/commands/",
+  "hooks": "./framework/hooks/hooks-cursor.json"
 }
