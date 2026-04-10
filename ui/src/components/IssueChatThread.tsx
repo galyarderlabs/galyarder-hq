@@ -65,7 +65,7 @@ import { cn, formatDateTime, formatShortDate } from "../lib/utils";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, Brain, Check, ChevronDown, Copy, Hammer, Loader2, MoreHorizontal, Galyarder, Search, ThumbsDown, ThumbsUp } from "lucide-react";
+import { ArrowRight, Brain, Check, ChevronDown, Copy, Hammer, Loader2, MoreHorizontal, Paperclip, Search, ThumbsDown, ThumbsUp } from "lucide-react";
 
 interface IssueChatMessageContext {
   feedbackVoteByTargetId: Map<string, FeedbackVoteValue>;
@@ -1150,7 +1150,7 @@ function IssueChatFeedbackButtons({
           <DialogHeader>
             <DialogTitle>Save your feedback sharing preference</DialogTitle>
             <DialogDescription>
-              Choose whether voted AI outputs can be shared with Galyarder Dashboard Labs. This
+              Choose whether voted AI outputs can be shared with Paperclip Dashboard Labs. This
               answer becomes the default for future thumbs up and thumbs down votes.
             </DialogDescription>
           </DialogHeader>
@@ -1506,7 +1506,7 @@ function IssueChatComposer({
               disabled={attaching}
               title="Attach image"
             >
-              <Galyarder className="h-4 w-4" />
+              <Paperclip className="h-4 w-4" />
             </Button>
           </div>
         ) : null}

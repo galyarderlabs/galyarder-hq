@@ -423,7 +423,7 @@ export function CompanySettings() {
         </div>
         <div className="space-y-3 rounded-md border border-border px-4 py-4">
           <ToggleField
-            label="Allow sharing voted AI outputs with Galyarder Dashboard Labs"
+            label="Allow sharing voted AI outputs with Paperclip Dashboard Labs"
             hint="Only AI-generated outputs you explicitly vote on are eligible for feedback sharing."
             checked={!!selectedCompany.feedbackDataSharingEnabled}
             onChange={(enabled) => feedbackSharingMutation.mutate(enabled)}

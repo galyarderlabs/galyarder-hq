@@ -408,7 +408,7 @@ export function Routines() {
     onError: (mutationError) => {
       pushToast({
         title: "Failed to update routine",
-        body: mutationError instanceof Error ? mutationError.message : "Galyarder could not update the routine.",
+        body: mutationError instanceof Error ? mutationError.message : "Paperclip could not update the routine.",
         tone: "error",
       });
     },

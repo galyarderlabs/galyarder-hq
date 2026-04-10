@@ -75,7 +75,7 @@ export function AuthPage() {
         <div className="w-full max-w-md mx-auto my-auto px-8 py-12">
           <div className="flex items-center gap-2 mb-8">
             <Sparkles className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm font-medium">Galyarder Dashboard</span>
+            <span className="text-sm font-medium">Paperclip Dashboard</span>
           </div>
 
           <h1 className="text-xl font-semibold">

@@ -476,7 +476,7 @@ function generateReadmeFromSelection(
   lines.push("rtk galyarder company import this-github-url-or-folder");
   lines.push("```");
   lines.push("");
-  lines.push("See [Galyarder](https://galyarder.ing) for more information.");
+  lines.push("See [Paperclip](https://galyarder.ing) for more information.");
   lines.push("");
   lines.push("---");
   lines.push(`Exported from [Galyarder](https://galyarder.ing) on ${new Date().toISOString().split("T")[0]}`);

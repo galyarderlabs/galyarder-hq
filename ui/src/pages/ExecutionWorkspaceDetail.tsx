@@ -403,7 +403,7 @@ export function ExecutionWorkspaceDetail() {
                   </div>
                   <h1 className="truncate text-xl font-semibold sm:text-2xl">{workspace.name}</h1>
                   <p className="max-w-2xl text-sm text-muted-foreground">
-                    Configure the concrete runtime workspace that Galyarder Dashboard reuses for this issue flow.
+                    Configure the concrete runtime workspace that Paperclip Dashboard reuses for this issue flow.
                     <span className="hidden sm:inline"> These settings stay
                     attached to the execution workspace so future runs can keep local paths, repo refs, provisioning, teardown,
                     and runtime-service behavior in sync with the actual workspace being reused.</span>

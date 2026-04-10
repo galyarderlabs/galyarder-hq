@@ -134,7 +134,7 @@ export function OpenClawGatewayConfigFields({
 
       {!isCreate && (
         <>
-          <Field label="Galyarder API URL override">
+          <Field label="Paperclip API URL override">
             <DraftInput
               value={
                 eff(

@@ -2013,7 +2013,7 @@ function PromptsTab({
                       <HelpCircle className="h-3 w-3 text-muted-foreground cursor-help" />
                     </TooltipTrigger>
                     <TooltipContent side="right" sideOffset={4}>
-                      Managed: Galyarder Dashboard stores and serves the instructions bundle. External: you provide a path on disk where the instructions live.
+                      Managed: Paperclip Dashboard stores and serves the instructions bundle. External: you provide a path on disk where the instructions live.
                     </TooltipContent>
                   </Tooltip>
                 </span>

@@ -433,7 +433,7 @@ export function RoutineDetail() {
     onError: (error) => {
       pushToast({
         title: "Failed to save routine",
-        body: error instanceof Error ? error.message : "Galyarder could not save the routine.",
+        body: error instanceof Error ? error.message : "Paperclip could not save the routine.",
         tone: "error",
       });
     },

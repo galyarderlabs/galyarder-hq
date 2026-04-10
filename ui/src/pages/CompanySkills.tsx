@@ -160,7 +160,7 @@ function sourceMeta(sourceBadge: CompanySkillSourceBadge, sourceLabel: string | 
     case "local":
       return { icon: Folder, label: sourceLabel ?? "Folder", managedLabel: "Folder managed" };
     case "galyarder":
-      return { icon: Galyarder, label: sourceLabel ?? "Galyarder Dashboard", managedLabel: "Galyarder managed" };
+      return { icon: Paperclip, label: sourceLabel ?? "Galyarder Dashboard", managedLabel: "Galyarder managed" };
     default:
       return { icon: Boxes, label: sourceLabel ?? "Catalog", managedLabel: "Catalog managed" };
   }
