@@ -2,111 +2,112 @@
   <img src="doc/assets/header.png" width="600" alt="Galyarder HQ">
 </p>
 
-# GALYARDER HQ
+# Galyarder HQ
 
-**Digital Company Control Plane**
+**The control plane for AI-native companies.**
 
-Galyarder HQ is a visual web platform for running AI-native companies. Hire agents, assign tasks, monitor execution, and manage costs — all from one interface.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/galyarderlabs/galyarder-hq)](https://github.com/galyarderlabs/galyarder-hq/stargazers)
 
-Designed for the **1-Man Army** — one founder running an entire company with AI agents.
+---
 
-## What is Galyarder HQ?
+Most founders using AI agents end up with the same problem: 20 terminals open, no idea what's running, costs spiraling, and zero visibility into what actually got done.
 
-Galyarder HQ is the operational control plane for AI-native companies:
+Galyarder HQ fixes that. It's a self-hosted dashboard that turns your scattered AI agents into a structured company — with org charts, task management, cost controls, and 24/7 autonomous execution.
 
-- **Multi-company management** — run multiple AI companies from one dashboard
-- **Agent orchestration** — hire, configure, and monitor agents
-- **Task management** — create issues, assign to agents, track execution
-- **Cost control** — token usage tracking, budget limits, auto-pause on overspend
-- **Autonomous execution** — heartbeat-based 24/7 agent operation
-- **Real-time monitoring** — live activity feeds and execution logs
-- **Mobile-ready** — manage your AI workforce from anywhere
+You set the goals. Your agents run the company.
 
-## Agent Framework
+---
 
-Galyarder HQ connects to [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills for AI coding assistants.
+## How it works
 
-Install Framework in Claude Code, Cursor, Gemini, or Codex. Then connect to HQ for visual management.
+**1. Build your org**  
+Create a company. Define departments. Hire agents — Claude, Codex, Cursor, Gemini, or any HTTP-compatible agent. Give them roles, budgets, and reporting lines.
 
-## Quick Start
+**2. Assign work**  
+Create issues and assign them to agents. Agents pick up tasks on their next heartbeat, execute, and report back. You review, approve, or redirect.
+
+**3. Monitor everything**  
+Real-time activity feed. Full execution logs. Cost tracking per agent, per task, per company. Governance controls so nothing runs without your sign-off.
+
+---
+
+## What you get
+
+**Org charts, not just chat**  
+Your agents have titles, managers, and departments. Work flows up and down the hierarchy the way it should.
+
+**Heartbeat execution**  
+Agents wake on a schedule, check their queue, and work. No babysitting. No manual triggers. Just results.
+
+**Cost enforcement**  
+Set monthly budgets per agent. When they hit the limit, they stop. You'll never wake up to a $3,000 API bill again.
+
+**Multi-company support**  
+Run multiple AI companies from one deployment. Complete data isolation. One control plane for your entire portfolio.
+
+**Full audit trail**  
+Every tool call, every decision, every cost event — logged and traceable. You always know what happened and why.
+
+**Governance**  
+Approval gates, config versioning, rollback. You're the board. Nothing happens without your sign-off.
+
+---
+
+## Quickstart
+
+No account required. No cloud dependency. Runs locally in minutes.
 
 ```bash
-# Install pnpm
-npm install -g pnpm
-
-# Clone and install
 git clone https://github.com/galyarderlabs/galyarder-hq.git
 cd galyarder-hq
 pnpm install
-
-# Start (uses embedded PGlite in dev, no DB setup needed)
 pnpm dev
-
-# Open http://localhost:3100
 ```
 
-## Architecture
+Open **http://localhost:3100**
 
-```
-galyarder-hq/
-├── server/          # Express REST API + orchestration
-├── ui/              # React + Vite board UI
-├── cli/             # CLI for managing HQ
-├── packages/
-│   ├── db/          # Drizzle ORM + PostgreSQL/PGlite
-│   ├── shared/      # Shared types and validators
-│   └── adapters/    # Agent adapter implementations
-└── doc/             # Documentation
-```
+Uses embedded PGlite in dev — no database setup needed.
 
-**Stack:**
-- Backend: Express.js, Drizzle ORM, PostgreSQL / PGlite (embedded dev)
-- Frontend: React, Vite, TanStack Query, Tailwind CSS, Radix UI
-- Adapters: Plugin system with dynamic loading
+**Requirements:** Node.js 20+, pnpm 9+
 
-## Supported Adapters
+---
 
-- Claude Code (`claude_local`)
-- Codex (`codex_local`)
-- Cursor (`cursor`)
-- Gemini (`gemini_local`)
-- OpenCode (`opencode_local`)
-- HTTP (`http`) — any agent via REST
-- External plugins via `~/.galyarder/adapter-plugins.json`
+## Agent Framework
+
+Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills built for AI assistants.
+
+Install Framework in your AI coding tool. Connect it to HQ. Now your agents have a company to work in.
+
+---
+
+## Supported agents
+
+Claude Code · Codex · Cursor · Gemini · OpenCode · Any HTTP agent
+
+---
 
 ## Development
 
 ```bash
-pnpm install       # Install all workspace dependencies
-pnpm dev           # Start dev server (http://localhost:3100)
+pnpm dev           # Start dev server (API + UI)
 pnpm build         # Build everything
-pnpm typecheck     # Type checking
+pnpm typecheck     # Type check
 pnpm test:run      # Run tests
-pnpm db:generate   # Generate DB migrations
+pnpm db:generate   # Generate migrations
 pnpm db:migrate    # Apply migrations
 ```
 
-Reset local dev database:
-```bash
-rm -rf data/pglite
-pnpm dev
-```
+Full guide: [doc/DEVELOPING.md](doc/DEVELOPING.md)
 
-See [doc/DEVELOPING.md](doc/DEVELOPING.md) for full development guide.
+---
 
-## Documentation
+## Contributing
 
-- [doc/DEVELOPING.md](doc/DEVELOPING.md) — Development guide
-- [doc/DATABASE.md](doc/DATABASE.md) — Database schema
-- [doc/PRODUCT.md](doc/PRODUCT.md) — Product overview
-- [doc/SPEC-implementation.md](doc/SPEC-implementation.md) — V1 build contract
-- [AGENTS.md](AGENTS.md) — Contributor guide for AI agents
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
 
 ## License
 
 MIT © 2026 Galyarder Labs
-
-## Support
-
-- Issues: https://github.com/galyarderlabs/galyarder-hq/issues
-- Framework: https://github.com/galyarderlabs/galyarder-framework
