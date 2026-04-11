@@ -7,16 +7,15 @@
 <p align="center">The control plane for AI-native companies.</p>
 
 <p align="center">
-  Open source · Self-hosted · No account required
-</p>
-
-<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
   <a href="https://github.com/galyarderlabs/galyarder-hq/stargazers"><img src="https://img.shields.io/github/stars/galyarderlabs/galyarder-hq" alt="Stars"></a>
   <a href="https://github.com/galyarderlabs/galyarder-framework"><img src="https://img.shields.io/badge/framework-galyarder-black" alt="Framework"></a>
 </p>
 
 ---
+<p align="center">
+  Open source · Self-hosted · No account required
+</p>
 
 ---
 
