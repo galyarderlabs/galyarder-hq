@@ -2,12 +2,21 @@
   <img src="doc/assets/G-HQ.jpeg" width="600" alt="Galyarder HQ">
 </p>
 
-# Galyarder HQ
+<h1 align="center">Galyarder HQ</h1>
 
-**The control plane for AI-native companies.**
+<p align="center">The control plane for AI-native companies.</p>
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/galyarderlabs/galyarder-hq)](https://github.com/galyarderlabs/galyarder-hq/stargazers)
+<p align="center">
+  Open source · Self-hosted · No account required
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-hq/stargazers"><img src="https://img.shields.io/github/stars/galyarderlabs/galyarder-hq" alt="Stars"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-framework"><img src="https://img.shields.io/badge/framework-galyarder-black" alt="Framework"></a>
+</p>
+
+---
 
 ---
 
