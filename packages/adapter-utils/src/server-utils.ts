@@ -543,6 +543,13 @@ export async function ensureAbsoluteDirectory(
   try {
     await fs.mkdir(cwd, { recursive: true });
     await assertDirectory();
+    // Ensure package.json exists so tools like npm/gemini can run in this directory
+    const pkgJsonPath = path.join(cwd, "package.json");
+    try {
+      await fs.access(pkgJsonPath);
+    } catch {
+      await fs.writeFile(pkgJsonPath, JSON.stringify({ name: "galyarder-workspace", version: "1.0.0", private: true }, null, 2) + "\n", "utf-8");
+    }
   } catch (err) {
     const reason = err instanceof Error ? err.message : String(err);
     throw new Error(`Could not create working directory "${cwd}": ${reason}`);
