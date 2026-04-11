@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="doc/assets/header.png" width="600" alt="Galyarder HQ">
+  <img src="doc/assets/G-HQ.jpeg" width="600" alt="Galyarder HQ">
 </p>
 
 # Galyarder HQ
