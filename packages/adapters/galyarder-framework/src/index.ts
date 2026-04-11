@@ -9,8 +9,7 @@ import { orchestrator } from "./orchestrator.js";
 import { loadAgent, loadAllAgents } from "./agent-loader.js";
 import { loadAllSkills, skillRegistry } from "./skill-executor.js";
 
-export const type = "galyarder_framework";
-export const label = "Galyarder Framework Agent";
+export { createServerAdapter } from "./server.js";
 
 export const models = [
   { id: "framework-v1", label: "Framework v1.4.0" }

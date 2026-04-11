@@ -1,40 +1,24 @@
-/**
- * Minimal server adapter for Galyarder Framework
- * Just enough to make Dashboard recognize and load it
- */
-
-export const galyarderFrameworkAdapter = {
+const adapter = {
   type: 'galyarder_framework',
-  
+
   async execute(ctx: any) {
     return {
       runId: ctx.runId,
       status: 'success',
       output: 'Galyarder Framework adapter loaded successfully',
-      usage: {
-        inputTokens: 0,
-        outputTokens: 0,
-        cachedTokens: 0,
-        costUsd: 0
-      }
+      usage: { inputTokens: 0, outputTokens: 0, cachedTokens: 0, costUsd: 0 }
     };
   },
-  
-  async testEnvironment(ctx: any) {
+
+  async testEnvironment(_ctx: any) {
     return {
       adapterType: 'galyarder_framework',
       status: 'pass',
-      checks: [
-        {
-          code: 'framework_loaded',
-          level: 'info',
-          message: 'Galyarder Framework adapter is ready'
-        }
-      ],
+      checks: [{ code: 'framework_loaded', level: 'info', message: 'Galyarder Framework adapter is ready' }],
       testedAt: new Date().toISOString()
     };
   },
-  
+
   agentConfigurationDoc: `
 # Galyarder Framework Adapter
 
@@ -46,4 +30,8 @@ The adapter automatically loads agents and skills from the Framework directory.
   `.trim()
 };
 
-export default galyarderFrameworkAdapter;
+export function createServerAdapter() {
+  return adapter;
+}
+
+export default adapter;
