@@ -12,7 +12,6 @@
   <a href="https://github.com/galyarderlabs/galyarder-framework"><img src="https://img.shields.io/badge/framework-galyarder-black" alt="Framework"></a>
 </p>
 
----
 <p align="center">
   Open source · Self-hosted · No account required
 </p>
@@ -60,6 +59,36 @@ Every tool call, every decision, every cost event — logged and traceable. You 
 **Governance**  
 Approval gates, config versioning, rollback. You're the board. Nothing happens without your sign-off.
 
+**Mobile ready**  
+Monitor and manage your autonomous businesses from anywhere. The UI is fully responsive.
+
+**Plugin system**  
+Extend HQ with custom plugins — add knowledge bases, custom tracing, queues, or any integration you need.
+
+---
+
+## Problems it solves
+
+| Without Galyarder HQ | With Galyarder HQ |
+|---|---|
+| 20 Claude Code tabs open, no idea what each one is doing. On reboot you lose everything. | Tasks are ticket-based, conversations are threaded, sessions persist across reboots. |
+| You manually gather context from several places to remind your agent what you're actually building. | Context flows from the task up through the project and company goals — agents always know what to do and why. |
+| Runaway loops waste hundreds of dollars before you even notice. | Cost tracking surfaces token budgets and throttles agents when they're out. |
+| Recurring jobs (reports, support, social) have to be manually kicked off every time. | Heartbeats handle regular work on a schedule. Management supervises. |
+| Agent configs are scattered across folders. No coordination, no visibility. | Org charts, ticketing, delegation, and governance out of the box. |
+
+---
+
+## What it's not
+
+**Not a chatbot.** Agents have jobs, not chat windows.
+
+**Not an agent framework.** We don't tell you how to build agents. We tell you how to run a company made of them.
+
+**Not a workflow builder.** No drag-and-drop pipelines. Galyarder HQ models companies — with org charts, goals, budgets, and governance.
+
+**Not a single-agent tool.** This is for teams. If you have one agent, you probably don't need Galyarder HQ. If you have twenty — you definitely do.
+
 ---
 
 ## Quickstart
@@ -85,13 +114,38 @@ Uses embedded PGlite in dev — no database setup needed.
 
 Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills built for AI assistants.
 
-Install Framework in your AI coding tool. Connect it to HQ. Now your agents have a company to work in.
+Install Framework in Claude Code, Cursor, Gemini, or Codex. Connect it to HQ. Now your agents have a company to work in — with org charts, budgets, and governance.
 
 ---
 
 ## Supported agents
 
-Claude Code · Codex · Cursor · Gemini · OpenCode · Any HTTP agent
+| Agent | Type |
+|---|---|
+| Claude Code | Local |
+| Codex | Local |
+| Cursor | Local |
+| Gemini | Local |
+| OpenCode | Local |
+| HTTP | Any agent via REST |
+
+If it can receive a heartbeat, it's hired.
+
+---
+
+## FAQ
+
+**What does a typical setup look like?**  
+Locally, a single Node.js process manages an embedded Postgres and local file storage. For production, point it at your own Postgres and deploy however you like. Configure companies, agents, and goals — the agents take care of the rest.
+
+**Can I run multiple companies?**  
+Yes. A single deployment can run an unlimited number of companies with complete data isolation.
+
+**How is Galyarder HQ different from just using Claude Code or Codex directly?**  
+Galyarder HQ uses those agents. It orchestrates them into a company — with org charts, budgets, goals, governance, and accountability. The agents do the work. HQ runs the company.
+
+**Do agents run continuously?**  
+By default, agents run on scheduled heartbeats and event-based triggers (task assignment, @-mentions). You can also hook in continuous agents. You bring your agent and HQ coordinates.
 
 ---
 
@@ -119,3 +173,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT © 2026 Galyarder Labs
+
+---
+
+<p align="center">
+  Open source. Self-hosted. No account required.<br>
+  Built for people who want to run companies, not babysit agents.
+</p>
