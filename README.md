@@ -18,82 +18,54 @@
 
 ---
 
-Most founders using AI agents end up with the same problem: 20 terminals open, no idea what's running, costs spiraling, and zero visibility into what actually got done.
+The next generation of companies won't be built by bigger teams. They'll be built by founders who figured out how to make AI work like a company — not just a tool.
 
-Galyarder HQ fixes that. It's a self-hosted dashboard that turns your scattered AI agents into a structured company — with org charts, task management, cost controls, and 24/7 autonomous execution.
+Galyarder HQ is the infrastructure for that. A self-hosted control plane where you define the org, set the goals, and let agents run the operations. Not a chatbot. Not a workflow builder. A company — with structure, accountability, and 24/7 execution.
 
-You set the goals. Your agents run the company.
+The shift is already happening. The question is whether you're running it, or still babysitting it.
+
+---
+
+## The idea
+
+Most people use AI agents the same way they used to use Google — one question at a time. That's not leverage. That's just a faster keyboard.
+
+Real leverage is when your agents have context, continuity, and coordination. When they know the company goal, not just the task. When they report to someone, not just to you. When they work while you sleep.
+
+That's what Galyarder HQ is built for.
 
 ---
 
 ## How it works
 
-**1. Build your org**  
-Create a company. Define departments. Hire agents — Claude, Codex, Cursor, Gemini, or any HTTP-compatible agent. Give them roles, budgets, and reporting lines.
+You build an org. Departments, roles, reporting lines. You hire agents — Claude, Codex, Cursor, Gemini, or anything that speaks HTTP. You assign goals and let work flow down the hierarchy.
 
-**2. Assign work**  
-Create issues and assign them to agents. Agents pick up tasks on their next heartbeat, execute, and report back. You review, approve, or redirect.
+Agents wake on heartbeats. They check their queue, pick up tasks, execute, and report back. You review what matters. Everything else runs itself.
 
-**3. Monitor everything**  
-Real-time activity feed. Full execution logs. Cost tracking per agent, per task, per company. Governance controls so nothing runs without your sign-off.
+Every decision is logged. Every cost is tracked. Every agent has a budget. When they hit the limit, they stop. You're always in control — you just don't have to be present.
 
 ---
 
 ## What you get
 
-**Org charts, not just chat**  
-Your agents have titles, managers, and departments. Work flows up and down the hierarchy the way it should.
+**Structure, not chaos**  
+Org charts. Departments. Reporting lines. Your agents have titles, managers, and a reason to exist beyond the last message you sent them.
 
-**Heartbeat execution**  
-Agents wake on a schedule, check their queue, and work. No babysitting. No manual triggers. Just results.
+**Continuity across sessions**  
+Tasks are tickets. Conversations are threaded. Sessions persist. Your agents remember what they were doing — even after a reboot.
 
-**Cost enforcement**  
-Set monthly budgets per agent. When they hit the limit, they stop. You'll never wake up to a $3,000 API bill again.
+**Cost discipline**  
+Monthly budgets per agent. Hard stops when limits are hit. You'll never wake up to a surprise bill again.
 
-**Multi-company support**  
-Run multiple AI companies from one deployment. Complete data isolation. One control plane for your entire portfolio.
+**Governance without micromanagement**  
+Approval gates for what matters. Config versioning. Rollback. You set the rules once. The system enforces them.
 
-**Full audit trail**  
-Every tool call, every decision, every cost event — logged and traceable. You always know what happened and why.
-
-**Governance**  
-Approval gates, config versioning, rollback. You're the board. Nothing happens without your sign-off.
-
-**Mobile ready**  
-Monitor and manage your autonomous businesses from anywhere. The UI is fully responsive.
-
-**Plugin system**  
-Extend HQ with custom plugins — add knowledge bases, custom tracing, queues, or any integration you need.
-
----
-
-## Problems it solves
-
-| Without Galyarder HQ | With Galyarder HQ |
-|---|---|
-| 20 Claude Code tabs open, no idea what each one is doing. On reboot you lose everything. | Tasks are ticket-based, conversations are threaded, sessions persist across reboots. |
-| You manually gather context from several places to remind your agent what you're actually building. | Context flows from the task up through the project and company goals — agents always know what to do and why. |
-| Runaway loops waste hundreds of dollars before you even notice. | Cost tracking surfaces token budgets and throttles agents when they're out. |
-| Recurring jobs (reports, support, social) have to be manually kicked off every time. | Heartbeats handle regular work on a schedule. Management supervises. |
-| Agent configs are scattered across folders. No coordination, no visibility. | Org charts, ticketing, delegation, and governance out of the box. |
-
----
-
-## What it's not
-
-**Not a chatbot.** Agents have jobs, not chat windows.
-
-**Not an agent framework.** We don't tell you how to build agents. We tell you how to run a company made of them.
-
-**Not a workflow builder.** No drag-and-drop pipelines. Galyarder HQ models companies — with org charts, goals, budgets, and governance.
-
-**Not a single-agent tool.** This is for teams. If you have one agent, you probably don't need Galyarder HQ. If you have twenty — you definitely do.
+**One control plane, many companies**  
+Run multiple AI companies from a single deployment. Complete data isolation. One dashboard for your entire portfolio.
 
 ---
 
 ## Quickstart
-
-No account required. No cloud dependency. Runs locally in minutes.
 
 ```bash
 git clone https://github.com/galyarderlabs/galyarder-hq.git
@@ -104,7 +76,7 @@ pnpm dev
 
 Open **http://localhost:3100**
 
-Uses embedded PGlite in dev — no database setup needed.
+No database setup needed — uses embedded PGlite in dev.
 
 **Requirements:** Node.js 20+, pnpm 9+
 
@@ -112,22 +84,15 @@ Uses embedded PGlite in dev — no database setup needed.
 
 ## Agent Framework
 
-Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills built for AI assistants.
+Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills for AI assistants.
 
-Install Framework in Claude Code, Cursor, Gemini, or Codex. Connect it to HQ. Now your agents have a company to work in — with org charts, budgets, and governance.
+Install Framework in your AI tool. Connect it to HQ. Your agents now have a company to work in.
 
 ---
 
 ## Supported agents
 
-| Agent | Type |
-|---|---|
-| Claude Code | Local |
-| Codex | Local |
-| Cursor | Local |
-| Gemini | Local |
-| OpenCode | Local |
-| HTTP | Any agent via REST |
+Claude Code · Codex · Cursor · Gemini · OpenCode · Any HTTP agent
 
 If it can receive a heartbeat, it's hired.
 
@@ -136,16 +101,16 @@ If it can receive a heartbeat, it's hired.
 ## FAQ
 
 **What does a typical setup look like?**  
-Locally, a single Node.js process manages an embedded Postgres and local file storage. For production, point it at your own Postgres and deploy however you like. Configure companies, agents, and goals — the agents take care of the rest.
+A single Node.js process, an embedded database, and your agents. For production, point it at your own Postgres and deploy wherever you like. The agents handle the rest.
 
 **Can I run multiple companies?**  
-Yes. A single deployment can run an unlimited number of companies with complete data isolation.
+Yes. Unlimited companies, complete data isolation, one deployment.
 
-**How is Galyarder HQ different from just using Claude Code or Codex directly?**  
-Galyarder HQ uses those agents. It orchestrates them into a company — with org charts, budgets, goals, governance, and accountability. The agents do the work. HQ runs the company.
+**How is this different from just using Claude Code directly?**  
+Claude Code does the work. Galyarder HQ runs the company that Claude Code works for. Org charts, budgets, goals, governance — the infrastructure that makes a team of agents actually function like a team.
 
 **Do agents run continuously?**  
-By default, agents run on scheduled heartbeats and event-based triggers (task assignment, @-mentions). You can also hook in continuous agents. You bring your agent and HQ coordinates.
+On heartbeats and event triggers by default. You bring the agent. HQ coordinates.
 
 ---
 
@@ -177,6 +142,7 @@ MIT © 2026 Galyarder Labs
 ---
 
 <p align="center">
-  Open source. Self-hosted. No account required.<br>
-  Built for people who want to run companies, not babysit agents.
+  The future of work isn't more people. It's better infrastructure.<br>
+  <br>
+  Open source. Self-hosted. Built for founders who think in systems.
 </p>
