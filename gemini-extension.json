@@ -1,6 +1,6 @@
 {
-  "name": "galyarder-framework",
-  "description": "Galyarder Framework: The ultimate 1-Man Army framework for high-rigor engineering and business growth",
+  "name": "galyarder-hq",
+  "description": "Galyarder HQ: The command plane and dashboard for Galyarder Framework Digital Companies.",
   "version": "1.4.0",
   "contextFileName": "GEMINI.md",
   "commands": "./commands/",
