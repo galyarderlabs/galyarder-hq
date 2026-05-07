@@ -4,8 +4,7 @@ Guidance for human and AI contributors working in this repository.
 
 ## 1. Purpose
 
-Galyarder HQ is the Strategic Command Interface / Command Layer for AI-native companies and agentic company systems inside the Galyarder Labs ecosystem.
-
+Galyarder is a control plane for AI-agent companies.
 The current implementation target is V1 and is defined in `doc/SPEC-implementation.md`.
 
 ## 2. Read This First
@@ -20,14 +19,6 @@ Before making changes, read in this order:
 
 `doc/SPEC.md` is long-horizon product context.
 `doc/SPEC-implementation.md` is the concrete V1 build contract.
-
-Brand/product framing gate:
-
-- HQ is a Strategic Command Interface, not a generic dashboard.
-- It must show structure, goals, budgets, reporting lines, approval gates, rollback/versioning, command history, and multi-company boundaries.
-- `AI-native companies` and `agentic companies` are valid HQ language when tied to those command behaviors.
-- Do not reduce HQ to chat UI or agent babysitting.
-- Public copy must not lead with cheap AI hype, Web3, crypto, SMB, or Enterprise SaaS framing.
 
 ## 3. Repo Map
 
@@ -146,8 +137,6 @@ When adding endpoints:
 - Keep routes and nav aligned with available API surface
 - Use company selection context for company-scoped pages
 - Surface failures clearly; do not silently ignore API errors
-- Product UI must feel operational, semantic, and trusted before beautiful.
-- Use brand atmosphere only on public/marketing surfaces; authenticated command surfaces must remain dense, structured, and evidence-forward.
 
 ## 10. Pull Request Requirements
 
@@ -169,20 +158,8 @@ A change is done when all are true:
 3. Contracts are synced across db/shared/server/ui
 4. Docs updated when behavior or commands change
 5. PR description follows the [PR template](.github/PULL_REQUEST_TEMPLATE.md) with all sections filled in (including Model Used)
-6. UI/copy changes preserve HQ as the Command Layer and do not contradict Galyarder Labs brand rules.
 
-## 12. Rejection Gates
-
-Reject or revise work if:
-
-- It calls HQ a generic dashboard or reduces it to chat.
-- It removes company scoping, approval gates, budgets, rollback/versioning, or activity logging from governed flows.
-- It invents unsupported agent capabilities or launch claims.
-- It uses marketing visuals as the core authenticated command surface.
-- It presents agent execution as fully autonomous with no risk or no operator command.
-- Typecheck, tests, or build fail and the failure is not reported.
-
-## 13. Fork-Specific: HenkDz/galyarder
+## 11. Fork-Specific: HenkDz/galyarder
 
 This is a fork of `galyarder/galyarder` with QoL patches and an **external-only** Hermes adapter story on branch `feat/externalize-hermes-adapter` ([tree](https://github.com/HenkDz/galyarder/tree/feat/externalize-hermes-adapter)).
 
@@ -222,6 +199,3 @@ PR #2218 (`feat/external-adapter-phase1`) adds external adapter support. See roo
 - `createServerAdapter()` must include ALL optional fields (especially `detectModel`)
 - Built-in UI adapters can shadow external plugin parsers — remove built-in when fully externalizing
 - Reference external adapters: Hermes (`@henkey/hermes-galyarder-adapter` or `file:`) and Droid (npm)
-
-<!-- This section is maintained by the coding agent via lore (https://github.com/BYK/loreai) -->
-<!-- End lore-managed section -->
