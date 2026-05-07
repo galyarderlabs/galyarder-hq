@@ -20,7 +20,7 @@
 
 The next generation of companies won't be built by bigger teams. They'll be built by founders who figured out how to make AI work like a company — not just a tool.
 
-Galyarder HQ is the infrastructure for that. A self-hosted control plane where you define the org, set the goals, and let agents run operations behind explicit queues, budgets, approvals, and review gates. Not a chatbot. Not a workflow builder. A company — with structure, accountability, and governed execution.
+Galyarder HQ is the infrastructure for that. A self-hosted control plane where you define the org, set the goals, and let agents run 24/7 through heartbeats, queues, budgets, approvals, and review gates. Not a chatbot. Not a workflow builder. A company — with structure, accountability, and governed execution.
 
 The shift is already happening. The question is whether you're running it, or still babysitting it.
 
@@ -40,7 +40,7 @@ That's what Galyarder HQ is built for.
 
 You build an org. Departments, roles, reporting lines. You hire agents — Claude, Codex, Cursor, Gemini, or anything that speaks HTTP. You assign goals and let work flow down the hierarchy.
 
-Agents wake on heartbeats. They check their queue, pick up tasks, execute, and report back. You review what matters. Routine work can move without turning every action into manual babysitting.
+Agents wake on heartbeats. They check their queue, pick up tasks, execute, and report back. You review what matters. With the right hosting and budget, the company does not sleep; it just stays bounded by the rules you set.
 
 Every decision is logged. Every cost is tracked. Every agent has a budget. When they hit the limit, they stop. You're always in control — you just don't have to be present.
 
