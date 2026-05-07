@@ -84,7 +84,7 @@ No database setup needed — uses embedded PGlite in dev.
 
 ## Agent Framework
 
-Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 35 specialized agents and 132 production-ready skills for AI assistants.
+Galyarder HQ pairs with [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework) — 40 specialized agents and 132 production-ready skills for AI assistants.
 
 Install Framework in your AI tool. Connect it to HQ. Your agents now have a company to work in.
 
