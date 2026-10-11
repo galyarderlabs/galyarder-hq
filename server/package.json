@@ -2,13 +2,13 @@
   "name": "@galyarder-framework/server",
   "version": "0.3.1",
   "license": "MIT",
-  "homepage": "https://github.com/galyarder/galyarder",
+  "homepage": "https://github.com/galyarderlabs/galyarder-hq",
   "bugs": {
-    "url": "https://github.com/galyarder/galyarder/issues"
+    "url": "https://github.com/galyarderlabs/galyarder-hq/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/galyarder/galyarder",
+    "url": "https://github.com/galyarderlabs/galyarder-hq",
     "directory": "server"
   },
   "type": "module",
