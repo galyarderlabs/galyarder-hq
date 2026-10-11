@@ -4,7 +4,7 @@
 
 <h1 align="center">Galyarder HQ</h1>
 
-<p align="center">The control plane for AI-native companies.</p>
+<p align="center">A self-hosted operations console for agent fleets.</p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
@@ -152,7 +152,7 @@ MIT © 2026 Galyarder Labs
 ---
 
 <p align="center">
-  The future of work isn't more people. It's better infrastructure.<br>
+  Open source. Self-hosted. Runs on your machine.<br>
   <br>
-  Open source. Self-hosted. Built for founders who think in systems.
+  Derived from <a href="https://github.com/paperclipai/paperclip">Paperclip</a> (MIT).
 </p>
