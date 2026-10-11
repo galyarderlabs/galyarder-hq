@@ -1,0 +1,21 @@
+# NOTICE
+
+Galyarder HQ
+Copyright (c) 2025-2026 Galyarder Labs
+
+---
+
+## Third-party components
+
+This product includes software developed by third parties.
+
+### paperclip
+
+- Source: https://github.com/paperclipai/paperclip
+- Copyright (c) 2025 Paperclip AI
+- License: MIT
+- Usage: Galyarder HQ is a modified derivative of paperclip. Portions of the
+  server, UI, CLI, and packaging layout originate from that project and have
+  been adapted, renamed, and extended for the Galyarder ecosystem.
+
+The MIT License text is reproduced in `LICENSE`.
