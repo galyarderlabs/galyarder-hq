@@ -135,6 +135,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
+## Lineage and attribution
+
+Galyarder HQ is a modified derivative of [paperclip](https://github.com/paperclipai/paperclip),
+licensed under MIT. Portions of the server, UI, CLI, and packaging layout
+originate from that project and have been adapted, renamed, and extended for the
+Galyarder ecosystem.
+
+Upstream copyright is retained in [`LICENSE`](LICENSE) alongside the notice for
+Galyarder Labs modifications. See [`NOTICE`](NOTICE).
+
 ## License
 
 MIT © 2026 Galyarder Labs
